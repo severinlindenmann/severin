@@ -37,3 +37,6 @@ next-env.d.ts
 
 # nextra
 public/feed.xml
+
+# static folder for DigitalOcean App Platform
+_static

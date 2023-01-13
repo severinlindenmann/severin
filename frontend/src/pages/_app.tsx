@@ -1,12 +1,6 @@
-import React from 'react';
+import '@/styles/globals.css'
+import type { AppProps } from 'next/app'
 
-import { AppProps } from 'next/app';
-
-import '../styles/main.css';
-import '../styles/prism-a11y-dark.css';
-
-const MyApp = ({ Component, pageProps }: AppProps) => (
-  <Component {...pageProps} />
-);
-
-export default MyApp;
+export default function App({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />
+}

@@ -8,7 +8,7 @@ const withNextra = require("nextra")({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  exportTrailingSlash: true,
+  trailingSlash: true,
   // any configs you need
   images: {
     unoptimized: true,

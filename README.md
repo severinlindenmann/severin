@@ -1,2 +1,5 @@
 # severin
- Website
+
+My personal blog
+
+[https://severin.io](https://severin.io)

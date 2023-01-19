@@ -43,5 +43,14 @@ streamlit run streamlit_app.py --server.port 8080 --server.headless true
 
 ## Step 4 - Deploy and Enjoy
 
+<Image
+  src="https://images.severin.io/blog/images/blog/1_2_success.PNG"
+  alt="Severin Lindenmann"
+  width={900}
+  height={600}
+  priority
+  className="next-image"
+/>
+
 If you find my blogs informative and helpful, I would greatly appreciate it if you used my referral link. Not only will it support my efforts in creating content, but it can also provides you with a free $200 credit on digitalocean.
 [![DigitalOcean Referral Badge](https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%202.svg)](https://www.digitalocean.com/?refcode=5cd6ce01ae65&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)

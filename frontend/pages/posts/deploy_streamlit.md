@@ -18,8 +18,8 @@ Create a Github Repo or clone [my Example](https://github.com/swisscenturion/do_
 
 Create the app and configure
 <Image
-  src="https://images.severin.io/blog/images/blog/1_1_create_app.PNG"
-  alt="Severin Lindenmann"
+  src="https://images.severin.io/blog/images/posts/1_1_create_app.webp"
+  alt="Create App"
   width={900}
   height={600}
   priority
@@ -33,8 +33,8 @@ streamlit run streamlit_app.py --server.port 8080 --server.headless true
 ```
 
 <Image
-  src="https://images.severin.io/blog/images/blog/1_1_run_command.png"
-  alt="Severin Lindenmann"
+  src="https://images.severin.io/blog/images/posts/1_2_run_command.webp"
+  alt="Run Command"
   width={900}
   height={600}
   priority
@@ -44,8 +44,8 @@ streamlit run streamlit_app.py --server.port 8080 --server.headless true
 ## Step 4 - Deploy and Enjoy
 
 <Image
-  src="https://images.severin.io/blog/images/blog/1_2_success.PNG"
-  alt="Severin Lindenmann"
+  src="https://images.severin.io/blog/images/posts/1_3_success.webp"
+  alt="Success"
   width={900}
   height={600}
   priority

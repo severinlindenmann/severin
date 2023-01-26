@@ -6,9 +6,9 @@ tag: web development
 author: Severin
 ---
 
-import Image from "next/image";
-
 # How to Deploy Streamlit to Digitalocean App
+
+import Image from "next/image";
 
 ## Step 1 - Create Repo
 

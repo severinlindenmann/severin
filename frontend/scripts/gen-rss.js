@@ -3,11 +3,14 @@ const path = require("path");
 const RSS = require("rss");
 const matter = require("gray-matter");
 
+const site_url = "https://severin.io";
+const title = "Severin Lindenmann";
+
 async function generate() {
   const feed = new RSS({
-    title: "Severin Lindenmann",
-    site_url: "https://severin.io",
-    feed_url: "https://severin.io/feed.xml",
+    title: title,
+    site_url: site_url,
+    feed_url: site_url + "/feed.xml",
   });
 
   const posts = await fs.readdir(path.join(__dirname, "..", "pages", "posts"));

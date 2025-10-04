@@ -11,69 +11,183 @@ import Image from "next/image";
 Here are some of the projects I've undertaken, many of which were created for personal enjoyment or as part of my studies at Hochschule Luzern.
 Most of them you can find on my  GitHub [@severinlindenmann](https://github.com/severinlindenmann) 
 
-### Swiss AI Weeks - Banking Client Simulation
+<section className="project-showcase">
+	<article className="project-card">
+		<div className="project-media project-media--gradient" aria-hidden="true">
+			<span className="project-media-symbol">🇭🇺</span>
+		</div>
+		<div className="project-content">
+			<header className="project-header">
+				<h2>Magyul – Hungarian Language Learning App</h2>
+				<p className="project-meta">React · TypeScript · Firebase · PWA</p>
+			</header>
+			<p className="project-summary">A modern, interactive progressive web app for mastering Hungarian vocabulary, verb conjugations, and grammar across desktop and mobile.</p>
+			<ul className="project-highlights">
+				<li>Vocabulary flashcards with multilingual examples (HU / EN / DE)</li>
+				<li>Pronoun-aware verb conjugation trainer and extensible grammar guide</li>
+				<li>Installable experience with IndexedDB syncing, React Query caching, and Firebase hosting</li>
+				<li>Built with React 19, MUI 7, TypeScript, Dexie, and Axios</li>
+			</ul>
+			<div className="project-links">
+				<a className="project-button primary" href="https://magyul.app" target="_blank" rel="noreferrer">Live demo</a>
+				<a className="project-button" href="https://github.com/severinlindenmann/magyul" target="_blank" rel="noreferrer">GitHub</a>
+			</div>
+		</div>
+	</article>
 
-> A sophisticated banking client simulation project developed for Swiss AI Weeks, utilizing Python to create realistic banking scenarios and client behavior modeling.
-> [View on GitHub →](https://github.com/severinlindenmann/swiss-ai-weeks-finnova-banking-client-simulation)
+	<article className="project-card">
+		<div className="project-media project-media--gradient" aria-hidden="true">
+			<span className="project-media-symbol">🏦</span>
+		</div>
+		<div className="project-content">
+			<header className="project-header">
+				<h2>Swiss AI Weeks Banking Client Simulation</h2>
+				<p className="project-meta">Python · Data Simulation</p>
+			</header>
+			<p className="project-summary">A realistic banking client simulator developed for Swiss AI Weeks, modelling account activity, fraud patterns, and operational workflows.</p>
+			<ul className="project-highlights">
+				<li>Scenario engine with configurable client personas and transaction cadences</li>
+				<li>Probabilistic event generation to stress-test AI-powered banking tools</li>
+				<li>Extensible dataset exports for analytics and dashboarding</li>
+			</ul>
+			<div className="project-links">
+				<a className="project-button" href="https://github.com/severinlindenmann/swiss-ai-weeks-finnova-banking-client-simulation" target="_blank" rel="noreferrer">GitHub</a>
+			</div>
+		</div>
+	</article>
 
-### Road Traffic Segmentation
+	<article className="project-card">
+		<a className="project-media" href="https://github.com/severinlindenmann/segmentation-of-streets-and-cars" target="_blank" rel="noreferrer">
+			<Image
+				src="https://storage.googleapis.com/seli-public-bucket-001/images/projects/segmentation.webp"
+				alt="Segmentation demo"
+				width={1125}
+				height={750}
+				className="project-image"
+			/>
+		</a>
+		<div className="project-content">
+			<header className="project-header">
+				<h2>Road Traffic Segmentation</h2>
+				<p className="project-meta">Computer Vision · PyTorch</p>
+			</header>
+			<p className="project-summary">Semantic segmentation experiments that classify cars, roads, and pedestrians to support real-time traffic analytics.</p>
+			<ul className="project-highlights">
+				<li>Custom training pipeline with augmentation and evaluation notebooks</li>
+				<li>Model comparison across U-Net style architectures and loss functions</li>
+				<li>Deployable inference scripts for batch and live processing</li>
+			</ul>
+			<div className="project-links">
+				<a className="project-button" href="https://github.com/severinlindenmann/segmentation-of-streets-and-cars" target="_blank" rel="noreferrer">GitHub</a>
+			</div>
+		</div>
+	</article>
 
-> The project aims to segment images of road traffic into different classes using machine learning techniques for computer vision applications.
-> [<Image
->   src="https://storage.googleapis.com/seli-public-bucket-001/images/projects/segmentation.webp"
->   alt="Photo"
->   width={1125}
->   height={750}
->   priority
->   className="next-image"
-> />](https://github.com/severinlindenmann/segmentation-of-streets-and-cars)
+	<article className="project-card">
+		<a className="project-media" href="https://github.com/severinlindenmann" target="_blank" rel="noreferrer">
+			<Image
+				src="https://storage.googleapis.com/seli-public-bucket-001/images/projects/wuchemenu.webp"
+				alt="Wuchemenu recipe overview"
+				width={1125}
+				height={750}
+				className="project-image"
+			/>
+		</a>
+		<div className="project-content">
+			<header className="project-header">
+				<h2>Wuchemenu.ch</h2>
+				<p className="project-meta">React · Contentful</p>
+			</header>
+			<p className="project-summary">A weekly recipe discovery experience that curates fresh menus and shopping inspiration for home cooks.</p>
+			<ul className="project-highlights">
+				<li>Responsive React interface with card-based recipe browsing</li>
+				<li>Headless CMS integration for easy menu management</li>
+				<li>Seasonal content theming and CTA experimentation</li>
+			</ul>
+			<div className="project-links">
+				<a className="project-button" href="https://github.com/severinlindenmann" target="_blank" rel="noreferrer">GitHub</a>
+			</div>
+		</div>
+	</article>
 
-### Wuchemenu.ch
+	<article className="project-card">
+		<a className="project-media" href="https://github.com/severinlindenmann/oneClassSVM" target="_blank" rel="noreferrer">
+			<Image
+				src="https://storage.googleapis.com/seli-public-bucket-001/images/projects/one_class_svm.webp"
+				alt="One Class SVM dashboard"
+				width={1125}
+				height={750}
+				className="project-image"
+			/>
+		</a>
+		<div className="project-content">
+			<header className="project-header">
+				<h2>One Class SVM for Spam Detection</h2>
+				<p className="project-meta">Streamlit · Machine Learning</p>
+			</header>
+			<p className="project-summary">An interactive Streamlit dashboard that lets teams explore one-class SVM models for spam detection and anomaly triage.</p>
+			<ul className="project-highlights">
+				<li>Configurable model training with live metric visualisation</li>
+				<li>Dataset upload and preprocessing helpers for rapid experimentation</li>
+				<li>Exportable model artefacts for downstream deployment</li>
+			</ul>
+			<div className="project-links">
+				<a className="project-button" href="https://github.com/severinlindenmann/oneClassSVM" target="_blank" rel="noreferrer">GitHub</a>
+			</div>
+		</div>
+	</article>
 
-> A React-based website where users can discover and enjoy new recipes.
-> [<Image
->   src="https://storage.googleapis.com/seli-public-bucket-001/images/projects/wuchemenu.webp"
->   alt="Photo"
->   width={1125}
->   height={750}
->   priority
->   className="next-image"
-> />](https://github.com/severinlindenmann)
+	<article className="project-card">
+		<a className="project-media" href="https://github.com/severinlindenmann/W.MDSE_VSGIS06.F2481" target="_blank" rel="noreferrer">
+			<Image
+				src="https://storage.googleapis.com/seli-public-bucket-001/images/projects/traffic_accidents.webp"
+				alt="Traffic accidents dashboard"
+				width={1125}
+				height={750}
+				className="project-image"
+			/>
+		</a>
+		<div className="project-content">
+			<header className="project-header">
+				<h2>Traffic Accidents in Switzerland</h2>
+				<p className="project-meta">Data Visualisation · GIS</p>
+			</header>
+			<p className="project-summary">Interactive dashboards that reveal patterns in Swiss traffic accidents between 2011 and 2021 for policy makers and commuters.</p>
+			<ul className="project-highlights">
+				<li>Temporal and geographical filtering with responsive map theming</li>
+				<li>Comparative views by cause, severity, and location</li>
+				<li>Storytelling layouts tailored for presentations and workshops</li>
+			</ul>
+			<div className="project-links">
+				<a className="project-button" href="https://github.com/severinlindenmann/W.MDSE_VSGIS06.F2481" target="_blank" rel="noreferrer">GitHub</a>
+			</div>
+		</div>
+	</article>
 
-### One Class SVM for Spam Detection
-
-> An Interactive Dashboard that allows users to train and test a One Class SVM model for spam detection. The dashboard is built using Streamlit.
-> [<Image
->   src="https://storage.googleapis.com/seli-public-bucket-001/images/projects/one_class_svm.webp"
->   alt="Photo"
->   width={1125}
->   height={750}
->   priority
->   className="next-image"
-> />](https://github.com/severinlindenmann/oneClassSVM)
-
-### Traffic accidents in Switzerland
-
-> A visual representation of traffic accidents in Switzerland from 2011 to 2021, created to make it easy to understand and interpret patterns and trends in accidents over time. The visualization allows for a deeper understanding of the causes, locations, and severity of accidents, and can be used to inform policy and decision making, as well as raise awareness about road safety in Switzerland.
-> [<Image
->   src="https://storage.googleapis.com/seli-public-bucket-001/images/projects/traffic_accidents.webp"
->   alt="Photo"
->   width={1125}
->   height={750}
->   priority
->   className="next-image"
-> />](https://github.com/severinlindenmann/W.MDSE_VSGIS06.F2481)
-
-### Twitter Classification Bot
-
-> A sophisticated bot that uses two pre-trained models to classify tweets on Twitter into four different mood categories: anger, joy, optimism, and sadness. The bot is able to analyze tweets in real-time and provide accurate mood classifications, making it a useful tool for understanding public sentiment on social media platforms.
-> [<Image
->   src="https://storage.googleapis.com/seli-public-bucket-001/images/projects/twitter_bot.webp"
->   alt="Photo"
->   width={1125}
->   height={750}
->   priority
->   className="next-image"
-> />](https://github.com/severinlindenmann)
-
-# Severin Lindenmann
+	<article className="project-card">
+		<a className="project-media" href="https://github.com/severinlindenmann" target="_blank" rel="noreferrer">
+			<Image
+				src="https://storage.googleapis.com/seli-public-bucket-001/images/projects/twitter_bot.webp"
+				alt="Twitter classification bot dashboard"
+				width={1125}
+				height={750}
+				className="project-image"
+			/>
+		</a>
+		<div className="project-content">
+			<header className="project-header">
+				<h2>Twitter Classification Bot</h2>
+				<p className="project-meta">NLP · Automation</p>
+			</header>
+			<p className="project-summary">A dual-model pipeline that classifies live tweets into anger, joy, optimism, and sadness to surface sentiment trends in real time.</p>
+			<ul className="project-highlights">
+				<li>Two-stage transformer inference with queue-based orchestration</li>
+				<li>Realtime dashboards for monitoring sentiment and model drift</li>
+				<li>Automated reactions and notifications driven by mood thresholds</li>
+			</ul>
+			<div className="project-links">
+				<a className="project-button" href="https://github.com/severinlindenmann" target="_blank" rel="noreferrer">GitHub</a>
+			</div>
+		</div>
+	</article>
+</section>

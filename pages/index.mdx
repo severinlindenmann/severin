@@ -6,45 +6,107 @@ date: 2024-01-01
 
 import Image from "next/image";
 
-## Hi I'm Severin Lindenmann 👋
+<section className="hero hero-centered">
+  <div className="hero-figure">
+    <Image
+      src="https://storage.googleapis.com/seli-public-bucket-001/images/me2022.webp"
+      alt="Severin Lindenmann"
+      width={640}
+      height={640}
+      priority
+      className="hero-avatar"
+    />
+  </div>
+  <span className="hero-kicker">Data & DevOps Engineer</span>
+  <h1>Hi, I'm Severin Lindenmann 👋</h1>
+  <p className="hero-summary">
+    {
+      "I build human-friendly data platforms and delivery pipelines that let teams ship insights faster. My sweet spot is the intersection of dataprep, DevOps and delightful developer experience."
+    }
+  </p>
+  <div className="hero-tags" role="list">
+    <span role="listitem">Data Platforms</span>
+    <span role="listitem">DevOps Automation</span>
+    <span role="listitem">Analytics Engineering</span>
+  </div>
+  <div className="hero-references">
+    <a href="https://github.com/severinlindenmann" target="_blank" rel="noreferrer">
+      {"GitHub"}
+    </a>
+    <span aria-hidden="true">•</span>
+    <a
+      href="https://www.linkedin.com/in/severin-lindenmann/"
+      target="_blank"
+      rel="noreferrer"
+    >
+      {"LinkedIn"}
+    </a>
+    <span aria-hidden="true">•</span>
+    <a href="mailto:hello@severin.io">{"hello@severin.io"}</a>
+  </div>
+  <div className="cta-group">
+    <a className="cta-button" href="mailto:hello@severin.io">
+      {"Say hello"}
+    </a>
+    <a className="cta-button secondary" href="/projects/">
+      {"Explore projects"}
+    </a>
+  </div>
+</section>
 
-<>
-  <Image
-    src="https://storage.googleapis.com/seli-public-bucket-001/images/me2022.webp"
-    alt="Severin Lindenmann"
-    width={900}
-    height={600}
-    priority
-    className="next-image"
-  />
-</> 
+<section className="experience-overview">
+  <article className="experience-card experience-card--primary">
+    <h2>Currently at ALTYCA</h2>
+    <p className="experience-lead">
+      I craft data and delivery platforms that help analytics teams move fast without breaking things.
+    </p>
+    <ul className="experience-list">
+      <li>Designing resilient lakehouse architectures on Azure Databricks.</li>
+      <li>Automating delivery with GitHub Actions, IaC, and dbt workflows.</li>
+      <li>Coaching engineers on sustainable DevOps practices and data quality.</li>
+      <li>Guiding migrations from legacy BI stacks to cloud-native analytics.</li>
+      <li>Rolling out shared tooling—from Python metadata frameworks to Spark CI pipelines.</li>
+    </ul>
+  </article>
+  <article className="experience-card">
+    <h2>Past experience</h2>
+    <ul className="experience-timeline">
+      <li><strong>Data Engineer · b.telligent</strong> — built data warehouses and ELT workflows with Databricks, Snowflake, Azure, and Fabric.</li>
+      <li><strong>CTO & Full Stack · Voicy AG</strong> — launched a voice-first reflection app powered by applied AI.</li>
+      <li><strong>CTO & Data Scientist · Layer</strong> — co-founded analytics products for SME marketing teams.</li>
+      <li><strong>Consultant · Oberholzer Digital</strong> — implemented data-driven strategies and instrumentation.</li>
+      <li><strong>Application Manager · Screenimage Systems AG</strong> — led digital signage rollouts and automation tooling.</li>
+    </ul>
+  </article>
+</section>
 
-
-I'm a passionate Data Engineer with a background in Mobility, Data Science, and Economics. I completed my [Bachelor of Science in Economics and Data Science in Mobility](https://www.hslu.ch/de-ch/wirtschaft/studium/bachelor/economics-data-science-mobility/) at the Lucerne University of Applied Sciences and Arts. My academic journey has equipped me with a diverse set of skills and a deep understanding of these fields.
-
-Currently, I work as a Data & DevOps Engineer / Consultant at [ALTYCA](https://altyca.ch) since September 2025, based in Zurich, Switzerland (Hybrid). In this role, I focus on:
-- Data Platform Development: Designing and implementing robust data platforms to support analytics and business intelligence needs
-- Consulting and supporting teams in optimizing DevOps processes and developing Python and SQL solutions
-- Enhancing development efficiency with tools like Git and GitHub Copilot
-- Implementing central data analytics platforms using Azure Databricks
-- Migrating Qlik dashboards to Power BI
-- Developing custom Python frameworks for metadata management
-- Automating CI/CD pipelines using SQL and Spark
-- Defining and establishing development processes and introducing tools such as Git and Visual Studio Code
-
-In my previous roles, I have contributed significantly to various projects:
-- As a Data Engineer at [b.telligent](https://www.btelligent.com/), I developed data warehouse solutions and ETL pipelines using tools like Databricks, Snowflake, Azure, and Fabric. My expertise in Python ensured data reliability and transformed raw data into actionable insights.
-- As CTO & Full Stack Developer at [Voicy AG](https://voicy.ch), I developed a web app for self-reflection in organizations using voice messages and AI-based data analysis.
-- As CTO & Data Scientist at [Layer](https://layer.swiss), I helped launching Layer.swiss, a spin-off from Oberholzer Digital, focusing on data-driven business solutions for SMEs in the marketing sector.
-- As a Consultant at [Oberholzer Digital](https://oberholzerkb.ch), I assisted in implementing data-driven strategies and deploying web analytics tools.
-- As an Application Manager at [Screenimage Systems AG](https://screenimage.ch), I led the implementation of digital signage software and developed automation solutions.
-
-In my free time, I enjoy exploring data and creating small side projects. I use tools like Python and React to bring my ideas to life. My passion for learning and my diverse skill set make me a valuable asset to any team.
-
-I am determined to continue growing in my field, using my skills and knowledge to drive innovation and make a positive impact in the industry.
-
-<div>
-  GitHub [@severinlindenmann](https://github.com/severinlindenmann) <br /> Linkedin
-  [@severin-lindenmann](https://www.linkedin.com/in/severin-lindenmann/) <br />{" "}
-  Email hello@severin.io
-</div>
+<section className="focus-grid">
+  <article className="focus-card">
+    <h3>What I'm focused on</h3>
+    <ul className="focus-list">
+      <li>Designing resilient data platforms that power analytics teams.</li>
+      <li>Automating delivery with GitHub, Azure, and modern DevOps tooling.</li>
+      <li>Coaching teams on sustainable engineering practices and DX.</li>
+    </ul>
+    <p className="focus-note">
+      My roots in mobility, economics, and data science keep me curious about the human side of infrastructure—how the right data experiences unlock better decisions.
+    </p>
+  </article>
+  <article className="focus-card focus-card--soft">
+    <h3>Tools I reach for often</h3>
+    <p className="focus-summary">A dependable stack for shipping data products quickly and safely.</p>
+    <div className="pill-group" role="list">
+      <span role="listitem">Azure Databricks</span>
+      <span role="listitem">Python</span>
+      <span role="listitem">SQL</span>
+      <span role="listitem">dbt</span>
+      <span role="listitem">Power BI</span>
+      <span role="listitem">Spark</span>
+      <span role="listitem">GitHub Copilot</span>
+      <span role="listitem">React</span>
+    </div>
+    <p className="contact-gentle">
+      Want to swap notes on data platforms? <a href="mailto:hello@severin.io">Drop me a line.</a>
+    </p>
+  </article>
+</section>

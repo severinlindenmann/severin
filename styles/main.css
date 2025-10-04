@@ -310,12 +310,6 @@ img.next-image {
   gap: clamp(1.8rem, 3.2vw, 2.4rem);
 }
 
-@media (min-width: 880px) {
-  .project-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
 .project-tile {
   display: grid;
   grid-template-columns: minmax(120px, 180px) minmax(0, 1fr);

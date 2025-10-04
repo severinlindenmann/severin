@@ -6,115 +6,80 @@ date: 2024-01-01
 
 import Image from "next/image";
 
-<section className="hero hero-centered">
-  <div className="hero-figure">
+<header className="profile-intro">
+  <div className="profile-intro__media">
     <Image
       src="https://storage.googleapis.com/seli-public-bucket-001/images/me2022.webp"
       alt="Severin Lindenmann"
-      width={640}
-      height={640}
+      width={1200}
+      height={800}
       priority
-      className="hero-avatar"
+      className="profile-intro__photo"
     />
   </div>
-  <span className="hero-kicker">Data & DevOps Engineer</span>
-  <h1>Hi, I'm Severin Lindenmann 👋</h1>
-  <p className="hero-summary">
-    {
-      "I build human-friendly data platforms and delivery pipelines that let teams ship insights faster. My sweet spot is the intersection of dataprep, DevOps and delightful developer experience."
-    }
-  </p>
-  <div className="hero-tags" role="list">
-    <span role="listitem">Data Platforms</span>
-    <span role="listitem">DevOps Automation</span>
-    <span role="listitem">Analytics Engineering</span>
-  </div>
-  <div className="hero-references">
-    <a href="https://github.com/severinlindenmann" target="_blank" rel="noreferrer">
-      {"GitHub"}
-    </a>
-    <span aria-hidden="true">•</span>
-    <a
-      href="https://www.linkedin.com/in/severin-lindenmann/"
-      target="_blank"
-      rel="noreferrer"
-    >
-      {"LinkedIn"}
-    </a>
-    <span aria-hidden="true">•</span>
-    <a href="mailto:hello@severin.io">{"hello@severin.io"}</a>
-  </div>
-  <div className="cta-group">
-    <a className="cta-button" href="mailto:hello@severin.io">
-      {"Say hello"}
-    </a>
-    <a className="cta-button secondary" href="/projects/">
-      {"Explore projects"}
-    </a>
-  </div>
-</section>
-
-<section className="experience-overview">
-  <article className="experience-card experience-card--primary">
-    <h2>Currently at ALTYCA</h2>
-    <p className="experience-lead">
+  <div className="profile-intro__content">
+    <p className="profile-intro__kicker">{"Data & DevOps Engineer · Zurich, Switzerland"}</p>
+    <h1>{"Hi, I'm Severin Lindenmann 👋"}</h1>
+    <p className="profile-intro__summary">
       {
-        "I craft data and delivery platforms that help analytics teams move fast without breaking things."
+        "I'm a passionate Data Engineer with a background in Mobility, Data Science, and Economics. I completed my Bachelor of Science in Economics and Data Science in Mobility at the Lucerne University of Applied Sciences and Arts, which grounded me in both technology and business."
       }
     </p>
-    <ul className="experience-list">
-      <li>Designing resilient lakehouse architectures on Azure Databricks.</li>
-      <li>Automating delivery with GitHub Actions, IaC, and dbt workflows.</li>
-      <li>Coaching engineers on sustainable DevOps practices and data quality.</li>
-      <li>Guiding migrations from legacy BI stacks to cloud-native analytics.</li>
-      <li>Rolling out shared tooling—from Python metadata frameworks to Spark CI pipelines.</li>
+    <p className="profile-intro__summary">
+      {"Today, I help teams build reliable data products, automate delivery pipelines, and create developer experiences that feel effortless."}
+    </p>
+    <ul className="profile-intro__links">
+      <li><a href="https://github.com/severinlindenmann" target="_blank" rel="noreferrer">{"GitHub"}</a></li>
+      <li><a href="https://www.linkedin.com/in/severin-lindenmann/" target="_blank" rel="noreferrer">{"LinkedIn"}</a></li>
+      <li><a href="mailto:hello@severin.io">{"hello@severin.io"}</a></li>
     </ul>
-  </article>
-  <article className="experience-card">
-    <h2>Past experience</h2>
-    <ul className="experience-timeline">
-      <li><strong>Data Engineer · b.telligent</strong> — built data warehouses and ELT workflows with Databricks, Snowflake, Azure, and Fabric.</li>
-      <li><strong>CTO & Full Stack · Voicy AG</strong> — launched a voice-first reflection app powered by applied AI.</li>
-      <li><strong>CTO & Data Scientist · Layer</strong> — co-founded analytics products for SME marketing teams.</li>
-      <li><strong>Consultant · Oberholzer Digital</strong> — implemented data-driven strategies and instrumentation.</li>
-      <li><strong>Application Manager · Screenimage Systems AG</strong> — led digital signage rollouts and automation tooling.</li>
-    </ul>
-  </article>
-</section>
+  </div>
+</header>
 
-<section className="focus-grid">
-  <article className="focus-card">
-    <h3>What I'm focused on</h3>
-    <ul className="focus-list">
-      <li>Designing resilient data platforms that power analytics teams.</li>
-      <li>Automating delivery with GitHub, Azure, and modern DevOps tooling.</li>
-      <li>Coaching teams on sustainable engineering practices and DX.</li>
+<section className="profile-sections">
+  <article className="profile-section">
+    <h2>{"What I'm doing now"}</h2>
+    <p>
+      {"Currently, I work as a Data & DevOps Engineer / Consultant at "}
+      <a href="https://altyca.ch/de/" target="_blank" rel="noreferrer">{"ALTYCA"}</a>
+      {" (since September 2025), based in Zurich, Switzerland (Hybrid). In this role, I focus on:"}
+    </p>
+    <ul>
+      <li>{"Designing and implementing robust data platforms to support analytics and business intelligence needs."}</li>
+      <li>{"Consulting and supporting teams in optimizing DevOps processes and developing Python and SQL solutions."}</li>
+      <li>{"Enhancing development efficiency with tools like Git and GitHub Copilot."}</li>
+      <li>{"Implementing central data analytics platforms using Azure Databricks."}</li>
+      <li>{"Migrating Qlik dashboards to Power BI."}</li>
+      <li>{"Developing custom Python frameworks for metadata management."}</li>
+      <li>{"Automating CI/CD pipelines using SQL and Spark."}</li>
+      <li>{"Defining and establishing development processes and introducing tools such as Git and Visual Studio Code."}</li>
     </ul>
-    <p className="focus-note">
-      {
-        "My roots in mobility, economics, and data science keep me curious about the human side of infrastructure—how the right data experiences unlock better decisions."
-      }
-    </p>
   </article>
-  <article className="focus-card focus-card--soft">
-    <h3>Tools I reach for often</h3>
-    <p className="focus-summary">
-      {"A dependable stack for shipping data products quickly and safely."}
+
+  <article className="profile-section">
+    <h2>{"Where I've been"}</h2>
+    <p>
+      {"In my previous roles, I have contributed significantly to a range of data and product initiatives:"}
     </p>
-    <div className="pill-group" role="list">
-      <span role="listitem">Azure Databricks</span>
-      <span role="listitem">Python</span>
-      <span role="listitem">SQL</span>
-      <span role="listitem">dbt</span>
-      <span role="listitem">Power BI</span>
-      <span role="listitem">Spark</span>
-      <span role="listitem">GitHub Copilot</span>
-      <span role="listitem">React</span>
-    </div>
-    <p className="contact-gentle">
-      {
-        "Want to swap notes on data platforms?"
-      } <a href="mailto:hello@severin.io">{"Drop me a line."}</a>
+    <ul className="profile-timeline">
+      <li><strong>{"Data Engineer — "}</strong><a href="https://www.btelligent.com/" target="_blank" rel="noreferrer">{"b.telligent"}</a><strong>{": "}</strong>{"developed data warehouse solutions and ETL pipelines with Databricks, Snowflake, Azure, and Fabric—turning raw data into reliable insights."}</li>
+      <li><strong>{"CTO & Full Stack Developer — "}</strong><a href="https://voicy.ch/" target="_blank" rel="noreferrer">{"Voicy AG"}</a><strong>{": "}</strong>{"built a voice-first web app for organisational self-reflection powered by AI-based data analysis."}</li>
+      <li><strong>{"CTO & Data Scientist — "}</strong><a href="https://layer.swiss/" target="_blank" rel="noreferrer">{"Layer"}</a><strong>{": "}</strong>{"launched Layer.swiss, a spin-off from Oberholzer Digital focused on data-driven business solutions for SMEs in the marketing sector."}</li>
+      <li><strong>{"Consultant — Oberholzer Digital: "}</strong>{"rolled out data-driven strategies and deployed web analytics stacks for clients."}</li>
+      <li><strong>{"Application Manager — "}</strong><a href="https://screenimage.ch/" target="_blank" rel="noreferrer">{"Screenimage Systems AG"}</a><strong>{": "}</strong>{"led the implementation of digital signage software and developed automation solutions."}</li>
+    </ul>
+  </article>
+
+  <article className="profile-section profile-section--highlight">
+    <h2>{"Beyond the resume"}</h2>
+    <p>
+      {"In my free time, I love exploring new datasets, creating small side projects, and bringing ideas to life with Python and React."}
+    </p>
+    <p>
+      {"My passion for learning and experimentation keeps me searching for the sweet spot where thoughtful design, reliable data, and curiosity meet."}
+    </p>
+    <p>
+      {"I'm determined to keep growing in this space, using my skills and knowledge to drive innovation and make a positive impact."}
     </p>
   </article>
 </section>

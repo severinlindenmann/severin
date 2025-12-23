@@ -1,85 +1,344 @@
 ---
 type: page
-title: About
-date: 2024-01-01
+title: Home
+date: 2025-01-01
 ---
 
 import Image from "next/image";
+import { TranslatedPage } from "../components/TranslatedPage";
+import Link from "next/link";
+import EmailCopy from "../components/EmailCopy";
 
-<header className="profile-intro">
-  <div className="profile-intro__media">
-    <Image
-      src="https://storage.googleapis.com/seli-public-bucket-001/images/me2022.webp"
-      alt="Severin Lindenmann"
-      width={1200}
-      height={800}
-      priority
-      className="profile-intro__photo"
-    />
-  </div>
-  <div className="profile-intro__content">
-    <p className="profile-intro__kicker">{"Data & DevOps Engineer · Zurich, Switzerland"}</p>
-    <h1>{"Hi, I'm Severin Lindenmann 👋"}</h1>
-    <p className="profile-intro__summary">
-      {
-        "I'm a passionate Data Engineer with a background in Mobility, Data Science, and Economics. I completed my Bachelor of Science in Economics and Data Science in Mobility at the Lucerne University of Applied Sciences and Arts, which grounded me in both technology and business."
+<TranslatedPage>
+{(t) => (
+  <>
+    <section className="hero">
+      <div className="hero__content">
+        <h1 className="hero__title">{t('home.hero.title')}</h1>
+        <p className="hero__subtitle">{t('home.hero.subtitle')}</p>
+        <div className="hero__actions">
+          <EmailCopy className="btn btn--primary">
+            {t('home.hero.cta')}
+          </EmailCopy>
+          <a 
+            href="https://wa.me/41765613150" 
+            target="_blank" 
+            rel="noreferrer"
+            className="btn btn--secondary btn--whatsapp"
+          >
+            <Image
+              src="/images/whatsapp.svg"
+              alt="WhatsApp"
+              width={20}
+              height={20}
+              className="btn-icon"
+            />
+            {t('home.hero.whatsapp')}
+          </a>
+        </div>
+      </div>
+      <div className="hero__visual">
+        <Image
+          src="https://storage.googleapis.com/seli-public-bucket-001/images/me2022.webp"
+          alt="Severin Lindenmann"
+          width={600}
+          height={400}
+          priority
+          className="hero__image"
+        />
+      </div>
+    </section>
+
+    <section className="services-preview">
+      <h2 className="section-title">{t('home.services.title')}</h2>
+      <p className="section-intro">{t('home.services.intro')}</p>
+      
+      <div className="service-cards">
+        <article className="service-card">
+          <h3>{t('home.services.webApps.title')}</h3>
+          <p>{t('home.services.webApps.description')}</p>
+          <ul className="service-card__list">
+            {t('home.services.webApps.features').map((feature, index) => (
+              <li key={index}>{feature}</li>
+            ))}
+          </ul>
+        </article>
+
+        <article className="service-card">
+          <h3>{t('home.services.ai.title')}</h3>
+          <p>{t('home.services.ai.description')}</p>
+          <ul className="service-card__list">
+            {t('home.services.ai.features').map((feature, index) => (
+              <li key={index}>{feature}</li>
+            ))}
+          </ul>
+        </article>
+
+        <article className="service-card">
+          <h3>{t('home.services.support.title')}</h3>
+          <p>{t('home.services.support.description')}</p>
+          <ul className="service-card__list">
+            {t('home.services.support.features').map((feature, index) => (
+              <li key={index}>{feature}</li>
+            ))}
+          </ul>
+        </article>
+      </div>
+
+      <div className="section-cta">
+        <Link href="/services" className="btn btn--outline">
+          {t('home.services.learnMore')}
+        </Link>
+      </div>
+    </section>
+
+    <section className="about-teaser">
+      <div className="about-teaser__content">
+        <h2>{t('home.about.title')}</h2>
+        <p>{t('home.about.intro')}</p>
+        <p>{t('home.about.experience')}</p>
+        <Link href="/about" className="btn btn--outline">
+          {t('home.about.learnMore')}
+        </Link>
+      </div>
+    </section>
+
+    <style jsx>{`
+      .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: center;
+        margin: 4rem 0 6rem;
+        padding: 3rem;
+        border-radius: 24px;
+        border: 1px solid var(--surface-border);
+        background: var(--surface);
+        box-shadow: var(--surface-shadow);
+        backdrop-filter: blur(18px);
       }
-    </p>
-    <p className="profile-intro__summary">
-      {"Today, I help teams build reliable data products, automate delivery pipelines, and create developer experiences that feel effortless."}
-    </p>
-    <ul className="profile-intro__links">
-      <li><a href="https://github.com/severinlindenmann" target="_blank" rel="noreferrer">{"GitHub"}</a></li>
-      <li><a href="https://www.linkedin.com/in/severin-lindenmann/" target="_blank" rel="noreferrer">{"LinkedIn"}</a></li>
-      <li><a href="mailto:hello@severin.io">{"hello@severin.io"}</a></li>
-    </ul>
-  </div>
-</header>
 
-<section className="profile-sections">
-  <article className="profile-section">
-    <h2>{"What I'm doing now"}</h2>
-    <p>
-      {"Currently, I work as a Data & DevOps Engineer / Consultant at "}
-      <a href="https://altyca.ch/de/" target="_blank" rel="noreferrer">{"ALTYCA"}</a>
-      {" (since September 2025), based in Zurich, Switzerland (Hybrid). In this role, I focus on:"}
-    </p>
-    <ul>
-      <li>{"Designing and implementing robust data platforms to support analytics and business intelligence needs."}</li>
-      <li>{"Consulting and supporting teams in optimizing DevOps processes and developing Python and SQL solutions."}</li>
-      <li>{"Enhancing development efficiency with tools like Git and GitHub Copilot."}</li>
-      <li>{"Implementing central data analytics platforms using Azure Databricks."}</li>
-      <li>{"Migrating Qlik dashboards to Power BI."}</li>
-      <li>{"Developing custom Python frameworks for metadata management."}</li>
-      <li>{"Automating CI/CD pipelines using SQL and Spark."}</li>
-      <li>{"Defining and establishing development processes and introducing tools such as Git and Visual Studio Code."}</li>
-    </ul>
-  </article>
+      .hero__title {
+        font-size: 3rem;
+        font-weight: 800;
+        line-height: 1.1;
+        margin: 0 0 1rem;
+        background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
 
-  <article className="profile-section">
-    <h2>{"Where I've been"}</h2>
-    <p>
-      {"In my previous roles, I have contributed significantly to a range of data and product initiatives:"}
-    </p>
-    <ul className="profile-timeline">
-      <li><strong>{"Data Engineer — "}</strong><a href="https://www.btelligent.com/" target="_blank" rel="noreferrer">{"b.telligent"}</a><strong>{": "}</strong>{"developed data warehouse solutions and ETL pipelines with Databricks, Snowflake, Azure, and Fabric—turning raw data into reliable insights."}</li>
-      <li><strong>{"CTO & Full Stack Developer — "}</strong><a href="https://voicy.ch/" target="_blank" rel="noreferrer">{"Voicy AG"}</a><strong>{": "}</strong>{"built a voice-first web app for organisational self-reflection powered by AI-based data analysis."}</li>
-      <li><strong>{"CTO & Data Scientist — "}</strong><a href="https://layer.swiss/" target="_blank" rel="noreferrer">{"Layer"}</a><strong>{": "}</strong>{"launched Layer.swiss, a spin-off from Oberholzer Digital focused on data-driven business solutions for SMEs in the marketing sector."}</li>
-      <li><strong>{"Consultant — Oberholzer Digital: "}</strong>{"rolled out data-driven strategies and deployed web analytics stacks for clients."}</li>
-      <li><strong>{"Application Manager — "}</strong><a href="https://screenimage.ch/" target="_blank" rel="noreferrer">{"Screenimage Systems AG"}</a><strong>{": "}</strong>{"led the implementation of digital signage software and developed automation solutions."}</li>
-    </ul>
-  </article>
+      .hero__subtitle {
+        font-size: 1.25rem;
+        color: var(--text-muted);
+        margin: 0 0 2rem;
+        line-height: 1.6;
+      }
 
-  <article className="profile-section profile-section--highlight">
-    <h2>{"Beyond the resume"}</h2>
-    <p>
-      {"In my free time, I love exploring new datasets, creating small side projects, and bringing ideas to life with Python and React."}
-    </p>
-    <p>
-      {"My passion for learning and experimentation keeps me searching for the sweet spot where thoughtful design, reliable data, and curiosity meet."}
-    </p>
-    <p>
-      {"I'm determined to keep growing in this space, using my skills and knowledge to drive innovation and make a positive impact."}
-    </p>
-  </article>
-</section>
+      .hero__actions {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .hero__image {
+        width: 100%;
+        height: auto;
+        border-radius: 16px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 0.875rem 1.75rem;
+        border-radius: 12px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        border: 2px solid transparent;
+      }
+
+      .btn--whatsapp {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .btn-icon {
+        display: inline-block;
+      }
+
+      .btn--primary {
+        background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+        color: white;
+      }
+
+      .btn--primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(99, 102, 241, 0.3);
+      }
+
+      .btn--secondary {
+        background: var(--surface);
+        color: var(--text);
+        border-color: var(--surface-border);
+      }
+
+      .btn--secondary:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+      }
+
+      .btn--outline {
+        background: transparent;
+        color: var(--accent);
+        border-color: var(--accent);
+      }
+
+      .btn--outline:hover {
+        background: var(--accent);
+        color: white;
+      }
+
+      .services-preview {
+        margin: 6rem 0;
+      }
+
+      .section-title {
+        font-size: 2.5rem;
+        font-weight: 800;
+        text-align: center;
+        margin: 0 0 1rem;
+      }
+
+      .section-intro {
+        text-align: center;
+        font-size: 1.125rem;
+        color: var(--text-muted);
+        max-width: 700px;
+        margin: 0 auto 3rem;
+      }
+
+      .service-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        margin-bottom: 3rem;
+      }
+
+      .service-card {
+        padding: 2rem;
+        border-radius: 16px;
+        border: 1px solid var(--surface-border);
+        background: var(--surface);
+        box-shadow: var(--surface-shadow);
+        backdrop-filter: blur(18px);
+        transition: all 0.3s ease;
+      }
+
+      .service-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+        border-color: var(--accent);
+      }
+
+      .service-card h3 {
+        margin: 0 0 0.75rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+
+      .service-card p {
+        color: var(--text-muted);
+        margin: 0 0 1rem;
+      }
+
+      .service-card__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .service-card__list li {
+        padding: 0.5rem 0;
+        color: var(--text-muted);
+        font-size: 0.95rem;
+      }
+
+      .service-card__list li::before {
+        content: "✓ ";
+        color: var(--accent);
+        font-weight: bold;
+        margin-right: 0.5rem;
+      }
+
+      .section-cta {
+        text-align: center;
+      }
+
+      .about-teaser {
+        margin: 6rem 0;
+        padding: 3rem;
+        border-radius: 24px;
+        border: 1px solid var(--surface-border);
+        background: var(--surface);
+        box-shadow: var(--surface-shadow);
+        backdrop-filter: blur(18px);
+        text-align: center;
+      }
+
+      .about-teaser__content {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      .about-teaser h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 0 0 1.5rem;
+      }
+
+      .about-teaser p {
+        font-size: 1.125rem;
+        color: var(--text-muted);
+        margin: 0 0 1.5rem;
+        line-height: 1.7;
+      }
+
+      @media (max-width: 768px) {
+        .hero {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+          padding: 2rem;
+          margin: 2rem 0 4rem;
+        }
+
+        .hero__title {
+          font-size: 2rem;
+        }
+
+        .hero__subtitle {
+          font-size: 1.125rem;
+        }
+
+        .hero__visual {
+          order: -1;
+        }
+
+        .section-title {
+          font-size: 2rem;
+        }
+
+        .service-cards {
+          grid-template-columns: 1fr;
+        }
+
+        .about-teaser {
+          padding: 2rem;
+        }
+      }
+    `}</style>
+  </>
+)}
+</TranslatedPage>

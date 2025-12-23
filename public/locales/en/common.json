@@ -1,0 +1,371 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "projects": "Projects",
+    "about": "About",
+    "posts": "Posts"
+  },
+  "footer": {
+    "crafted": "Crafted in Zurich",
+    "copyright": "© Severin Lindenmann",
+    "rss": "RSS",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "email": "Email"
+  },
+  "home": {
+    "title": "Home",
+    "hero": {
+      "title": "Web Apps & AI Solutions – Privacy First & GDPR Compliant",
+      "subtitle": "Custom web applications with focus on security and Swiss data protection. Open Source, privacy-compliant and compliance-ready.",
+      "cta": "📧 hello@severin.io",
+      "whatsapp": "WhatsApp",
+      "viewWork": "View Projects"
+    },
+    "services": {
+      "title": "Services",
+      "intro": "Web apps, AI integration, and technical support – secure, privacy-compliant, and reliable.",
+      "webApps": {
+        "title": "Web Apps & Tools",
+        "description": "Custom web applications and digital tools – from prototype to production-ready app.",
+        "features": [
+          "Interactive web apps with React",
+          "Fast prototypes & MVPs",
+          "API development & databases"
+        ]
+      },
+      "ai": {
+        "title": "AI & AI Integration",
+        "description": "Intelligent AI solutions for document processing, automation, and smart workflows.",
+        "features": [
+          "Document scanning & AI analysis",
+          "Process automation with AI",
+          "Intelligent data evaluation"
+        ]
+      },
+      "support": {
+        "title": "Code Review & Support",
+        "description": "Built a prototype with AI? I help you turn it into a secure, professional solution.",
+        "features": [
+          "Security check & code review",
+          "Optimization & quality assurance",
+          "Deployment & technical support"
+        ]
+      },
+      "learnMore": "View All Services"
+    },
+    "about": {
+      "title": "About Me",
+      "intro": "10+ years experience in Data Engineering and Full Stack Development. Specialized in secure, privacy-compliant solutions for SMEs.",
+      "experience": "Open Source · Privacy First · GDPR-Ready",
+      "learnMore": "More About Me"
+    }
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Secure web apps & AI solutions – Privacy First, GDPR compliant, Swiss data protection.",
+    "whatIOffer": "What I Offer",
+    "exampleProjects": "Example Projects",
+    "webApps": {
+      "title": "Web Apps & Tools",
+      "intro": "Custom web applications with React, TypeScript, and FastAPI – secure, scalable, and privacy-compliant.",
+      "features": [
+        "Privacy First & GDPR-compliant development",
+        "Progressive Web Apps (PWAs) with offline support",
+        "API development & secure databases",
+        "Open Source tools & modern technologies"
+      ],
+      "examples": {
+        "vertrag": "AI-powered contract generation for Switzerland & Germany",
+        "magyul": "Language learning app with offline mode (PWA)",
+        "voicy": "Voice-first web app for organizational self-reflection",
+        "layer": "Data-driven marketing solutions for SMEs"
+      }
+    },
+    "ai": {
+      "title": "AI & AI Integration",
+      "intro": "AI solutions for your business – privacy-compliant and secure. Integration into existing systems or new AI-powered workflows.",
+      "features": [
+        "Swiss data protection & GDPR compliance",
+        "Document scanning & OCR processing",
+        "Process automation (emails, reports, data)",
+        "Integration: OpenAI, Anthropic, Mistral (EU), Google AI, Azure AI"
+      ]
+    },
+    "support": {
+      "title": "Code Review & Support",
+      "intro": "Built a prototype with AI tools? I'll turn it into a secure, production-ready solution with focus on security & compliance.",
+      "features": [
+        "Security audit & vulnerability check",
+        "GDPR & compliance review",
+        "Code review for AI-generated apps",
+        "Performance & best practices"
+      ]
+    },
+    "techStack": {
+      "title": "Technology Stack",
+      "intro": "These are my proven technology stacks, but I'm tech-agnostic and work with whatever fits your needs best.",
+      "frontend": {
+        "title": "Frontend",
+        "items": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vue.js"]
+      },
+      "backend": {
+        "title": "Backend",
+        "items": ["Python", "FastAPI", "Node.js", "PostgreSQL", "Firebase"]
+      },
+      "data": {
+        "title": "Data & Analytics",
+        "items": ["Databricks", "BigQuery", "Apache Superset", "Airbyte", "Pandas"]
+      },
+      "cloud": {
+        "title": "Cloud & DevOps",
+        "items": ["Google Cloud", "Azure", "Docker", "GitHub Actions", "Serverless"]
+      }
+    },
+    "pricing": {
+      "title": "Pricing",
+      "intro": "From CHF 500 – For prototypes and initial feasibility checks",
+      "subtitle": "Also available as monthly subscription model",
+      "startup": "For startups, equity participation possible",
+      "contact": "Contact me with any questions"
+    },
+    "cta": {
+      "title": "Start Project?",
+      "description": "Contact me for a free consultation.",
+      "email": "📧 hello@severin.io",
+      "whatsapp": "WhatsApp",
+      "note": "Response within 24h"
+    }
+  },
+  "about": {
+    "title": "About",
+    "kicker": "Data & DevOps Engineer · Zurich, Switzerland",
+    "greeting": "Hi, I'm Severin Lindenmann 👋",
+    "intro1": "I'm a passionate Data Engineer with a background in Mobility, Data Science, and Economics. I completed my Bachelor of Science in Economics and Data Science in Mobility at the Lucerne University of Applied Sciences and Arts, which grounded me in both technology and business.",
+    "intro2": "Today, I help teams build reliable data products, automate delivery pipelines, and create developer experiences that feel effortless.",
+    "whatImDoing": "What I'm doing now",
+    "currentRole": "Currently, I work as a Data & DevOps Engineer / Consultant at",
+    "since": "based in Zurich, Switzerland. In this role, I focus on:",
+    "responsibilities": [
+      "Designing and implementing robust data platforms to support analytics and business intelligence needs.",
+      "Consulting and supporting teams in optimizing DevOps processes and developing Python and SQL solutions.",
+      "Enhancing development efficiency with tools like Git and GitHub Copilot.",
+      "Implementing central data analytics platforms using Azure Databricks.",
+      "Migrating Qlik dashboards to Power BI.",
+      "Developing custom Python frameworks for metadata management.",
+      "Automating CI/CD pipelines using SQL and Spark.",
+      "Defining and establishing development processes and introducing tools such as Git and Visual Studio Code."
+    ],
+    "whereIveBeen": "Where I've been",
+    "previousRoles": "In my previous roles, I have contributed significantly to a range of data and product initiatives:",
+    "experiences": [
+      {
+        "role": "Data Engineer — ",
+        "company": "b.telligent",
+        "description": ": developed data warehouse solutions and ETL pipelines with Databricks, Snowflake, Azure, and Fabric—turning raw data into reliable insights."
+      },
+      {
+        "role": "CTO & Full Stack Developer — ",
+        "company": "Voicy AG",
+        "description": ": built a voice-first web app for organisational self-reflection powered by AI-based data analysis."
+      },
+      {
+        "role": "CTO & Data Scientist — ",
+        "company": "Layer",
+        "description": ": launched Layer.swiss, a spin-off from Oberholzer Digital focused on data-driven business solutions for SMEs in the marketing sector."
+      },
+      {
+        "role": "Consultant — Oberholzer Digital: ",
+        "company": "",
+        "description": "rolled out data-driven strategies and deployed web analytics stacks for clients."
+      },
+      {
+        "role": "Application Manager — ",
+        "company": "Screenimage Systems AG",
+        "description": ": led the implementation of digital signage software and developed automation solutions."
+      }
+    ],
+    "education": {
+      "title": "Education",
+      "bachelor": {
+        "title": "Bachelor of Science in Mobility, Data Science and Economics",
+        "period": "2020 - 2024",
+        "institution": "Lucerne University of Applied Sciences and Arts"
+      },
+      "berufsmatur": {
+        "title": "Technical Vocational Baccalaureate 2",
+        "period": "2019 - 2020",
+        "institution": "Vocational School Aarau"
+      },
+      "apprentice": {
+        "title": "Computer Science System Technician EFZ",
+        "period": "2013 - 2017",
+        "institution": "Vocational School Baden"
+      }
+    },
+    "certifications": {
+      "title": "Certifications",
+      "items": [
+        {
+          "icon": "📋",
+          "name": "CPRE - Requirements Engineering",
+          "issuer": "Future Network Cert",
+          "date": "Oct 2025"
+        },
+        {
+          "iconKey": "github",
+          "name": "GitHub Foundations",
+          "issuer": "GitHub",
+          "date": "Mar 2025"
+        },
+        {
+          "iconKey": "azure",
+          "name": "Microsoft Fabric Analytics Engineer",
+          "issuer": "Microsoft",
+          "date": "Mar 2025"
+        },
+        {
+          "iconKey": "azure",
+          "name": "Azure Fundamentals",
+          "issuer": "Microsoft",
+          "date": "Feb 2025"
+        },
+        {
+          "iconKey": "databricks",
+          "name": "Databricks Data Engineer Associate",
+          "issuer": "Databricks",
+          "date": "Jan 2025"
+        },
+        {
+          "iconKey": "google",
+          "name": "Google Data Analytics Specialization",
+          "issuer": "Coursera",
+          "date": "Nov 2021"
+        }
+      ]
+    },
+    "skills": {
+      "title": "Skills",
+      "dataEngineering": {
+        "title": "Data Engineering",
+        "items": ["Databricks", "Azure", "BigQuery", "PostgreSQL", "Snowflake", "Apache Superset", "Airbyte"]
+      },
+      "programming": {
+        "title": "Programming",
+        "items": ["Python", "JavaScript", "TypeScript", "SQL", "Shell"]
+      },
+      "devOps": {
+        "title": "DevOps & Cloud",
+        "items": ["Docker", "Google Cloud", "Azure", "GitHub Actions", "Serverless", "CI/CD"]
+      },
+      "frameworks": {
+        "title": "Frameworks",
+        "items": ["React", "Next.js", "FastAPI", "Node.js", "Pandas", "Spark"]
+      }
+    },
+    "beyondResume": "Beyond the resume",
+    "beyondText1": "In my free time, I love exploring new datasets, creating small side projects, and bringing ideas to life with Python and React.",
+    "beyondText2": "My passion for learning and experimentation keeps me searching for the sweet spot where thoughtful design, reliable data, and curiosity meet.",
+    "beyondText3": "I'm determined to keep growing in this space, using my skills and knowledge to drive innovation and make a positive impact."
+  },
+  "projects": {
+    "title": "Projects",
+    "intro": "A selection of my realized projects – from AI-powered web apps to data analysis tools and interactive applications. Each project demonstrates my expertise in modern technologies and privacy-compliant solutions. Selected projects available on my GitHub",
+    "liveDemo": "Live demo",
+    "github": "GitHub",
+    "vertragsGenerator": {
+      "title": "Vertrags-Generator",
+      "meta": "AI · Legal · Swiss & German Law",
+      "summary": "AI-powered platform for generating legally valid contracts in Switzerland and Germany, including vehicle and loan agreements.",
+      "features": [
+        "Free first contract with AI-optimized legal drafting.",
+        "Fully encrypted and compliant with Swiss (OR) and German law.",
+        "Digital signing and sharing in four simple steps."
+      ]
+    },
+    "magyul": {
+      "title": "Magyul – Hungarian Language Learning App",
+      "meta": "React · TypeScript · Firebase · PWA",
+      "summary": "A multilingual vocabulary trainer with conjugation drills, offline-first study modes, and bite-size grammar guides.",
+      "features": [
+        "Flashcards with HU / EN / DE context sentences.",
+        "Installable PWA experience with IndexedDB sync."
+      ]
+    },
+    "swissAI": {
+      "title": "Swiss AI Weeks Banking Client Simulation",
+      "meta": "Python · Data Simulation",
+      "summary": "Synthetic banking datasets and personas that stress-test AI systems for fraud detection and client analytics.",
+      "features": [
+        "Scenario engine for configurable customer behaviour.",
+        "Probabilistic event generation for analytics sandboxes."
+      ]
+    },
+    "chinderhuete": {
+      "title": "Chinderhuete.ch – Nanny Service",
+      "meta": "HTML · CSS · Responsive Design",
+      "summary": "Professional landing page for nanny and emergency childcare services in the Aargau and Zurich regions.",
+      "features": [
+        "Clear service overview with pricing information.",
+        "Responsive design for mobile users.",
+        "Direct contact options via WhatsApp and email."
+      ]
+    },
+    "roadSegmentation": {
+      "title": "Road Traffic Segmentation",
+      "meta": "Computer Vision · PyTorch",
+      "summary": "Semantic segmentation experiments that classify roads, cars, and pedestrians for smarter mobility analytics.",
+      "features": [
+        "Training notebooks with augmentation and evaluation tooling.",
+        "Deployable inference scripts for batch and live use."
+      ]
+    },
+    "wuchemenu": {
+      "title": "Wuchemenu.ch",
+      "meta": "React · Contentful",
+      "summary": "Weekly recipe inspiration with curated menus, seasonal flavours, and grocery planning prompts.",
+      "features": [
+        "Card-based browsing with responsive layouts.",
+        "Headless CMS workflow for publishing fresh menus."
+      ]
+    },
+    "oneClassSVM": {
+      "title": "One Class SVM for Spam Detection",
+      "meta": "Streamlit · Machine Learning",
+      "summary": "An interactive Streamlit dashboard that invites teams to explore one-class SVM models for spotting anomalies.",
+      "features": [
+        "Configurable training runs with live metric visualisation.",
+        "Dataset upload helpers for rapid experimentation."
+      ]
+    },
+    "trafficAccidents": {
+      "title": "Traffic Accidents in Switzerland",
+      "meta": "Data Visualisation · GIS",
+      "summary": "Interactive dashboards that surface accident trends across time, severity, and location between 2011 and 2021.",
+      "features": [
+        "Exploratory filters with responsive map visuals.",
+        "Storytelling layouts for workshops and policy reviews."
+      ]
+    },
+    "twitterBot": {
+      "title": "Twitter Classification Bot",
+      "meta": "NLP · Automation",
+      "summary": "A live sentiment bot that labels tweets by mood to surface community signals in real time.",
+      "features": [
+        "Two-stage transformer inference with queue orchestration.",
+        "Dashboards to monitor sentiment trends and model drift."
+      ]
+    },
+    "loraIoT": {
+      "title": "LoRa IoT Sailboat Sensor",
+      "meta": "IoT · LoRa · Hardware",
+      "summary": "Self-built sensor for monitoring GPS position, temperature, and humidity on a sailboat in low-power mode.",
+      "features": [
+        "Live tracking every 5 minutes via LoRa network.",
+        "Year-end analysis of traveled distances and visited ports.",
+        "Web dashboard for real-time monitoring and alerts."
+      ]
+    }
+  }
+}

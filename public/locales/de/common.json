@@ -1,0 +1,371 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "projects": "Projekte",
+    "about": "Über mich",
+    "posts": "Beiträge"
+  },
+  "footer": {
+    "crafted": "Hergestellt in Zürich",
+    "copyright": "© Severin Lindenmann",
+    "rss": "RSS",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "email": "E-Mail"
+  },
+  "home": {
+    "title": "Home",
+    "hero": {
+      "title": "Web Apps & KI-Lösungen – Privacy First & GDPR-konform",
+      "subtitle": "Massgeschneiderte Web-Anwendungen mit Fokus auf Sicherheit und Schweizer Datenschutz. Open Source, Privacy-konform und Compliance-ready.",
+      "cta": "📧 hello@severin.io",
+      "whatsapp": "WhatsApp",
+      "viewWork": "Projekte ansehen"
+    },
+    "services": {
+      "title": "Services",
+      "intro": "Web Apps, KI-Integration und technischer Support – sicher, datenschutzkonform und zuverlässig.",
+      "webApps": {
+        "title": "Web Apps & Tools",
+        "description": "Massgeschneiderte Web-Anwendungen und digitale Tools – vom Prototyp bis zur fertigen App.",
+        "features": [
+          "Interaktive Web-Apps mit React",
+          "Schnelle Prototypen & MVPs",
+          "API-Entwicklung & Datenbanken"
+        ]
+      },
+      "ai": {
+        "title": "KI & AI Integration",
+        "description": "Intelligente KI-Lösungen für Dokumentenverarbeitung, Automatisierung und smarte Workflows.",
+        "features": [
+          "Dokumenten-Scanning & AI-Analyse",
+          "Prozess-Automatisierung mit KI",
+          "Intelligente Datenauswertung"
+        ]
+      },
+      "support": {
+        "title": "Code Review & Support",
+        "description": "Prototyp mit AI gebaut? Ich helfe dir, daraus eine sichere, professionelle Lösung zu machen.",
+        "features": [
+          "Sicherheits-Check & Code-Review",
+          "Optimierung & Qualitätssicherung",
+          "Deployment & Technical Support"
+        ]
+      },
+      "learnMore": "Alle Services ansehen"
+    },
+    "about": {
+      "title": "Über mich",
+      "intro": "10+ Jahre Erfahrung in Data Engineering und Full Stack Development. Spezialisiert auf sichere, datenschutzkonforme Lösungen für KMU.",
+      "experience": "Open Source · Privacy First · GDPR-Ready",
+      "learnMore": "Mehr über mich"
+    }
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Sichere Web Apps & KI-Lösungen – Privacy First, GDPR-konform, Schweizer Datenschutz.",
+    "whatIOffer": "Was ich anbiete",
+    "exampleProjects": "Beispiel-Projekte",
+    "webApps": {
+      "title": "Web Apps & Tools",
+      "intro": "Massgeschneiderte Web-Anwendungen mit React, TypeScript und FastAPI – sicher, skalierbar und datenschutzkonform.",
+      "features": [
+        "Privacy First & GDPR-konforme Entwicklung",
+        "Progressive Web Apps (PWAs) mit Offline-Support",
+        "API-Entwicklung & sichere Datenbanken",
+        "Open Source Tools & moderne Technologien"
+      ],
+      "examples": {
+        "vertrag": "KI-gestützte Vertragsgenerierung für Schweiz & Deutschland",
+        "magyul": "Sprachlern-App mit Offline-Modus (PWA)",
+        "voicy": "Voice-First Web-App für organisationale Selbstreflexion",
+        "layer": "Datengetriebene Marketing-Lösungen für KMU"
+      }
+    },
+    "ai": {
+      "title": "KI & AI Integration",
+      "intro": "KI-Lösungen für dein Unternehmen – datenschutzkonform und sicher. Integration in bestehende Systeme oder neue AI-gestützte Workflows.",
+      "features": [
+        "Schweizer Datenschutz & GDPR-Compliance",
+        "Dokumenten-Scanning & OCR-Verarbeitung",
+        "Prozess-Automatisierung (E-Mails, Reports, Daten)",
+        "Integration: OpenAI, Anthropic, Mistral (EU), Google AI, Azure AI"
+      ]
+    },
+    "support": {
+      "title": "Code Review & Support",
+      "intro": "Prototyp mit AI-Tools gebaut? Ich mache daraus eine sichere, produktionsreife Lösung mit Fokus auf Security & Compliance.",
+      "features": [
+        "Security Audit & Vulnerability-Check",
+        "GDPR & Compliance-Prüfung",
+        "Code-Review für AI-generierte Apps",
+        "Performance & Best Practices"
+      ]
+    },
+    "techStack": {
+      "title": "Technologie-Stack",
+      "intro": "Das sind meine bewährten Technologie-Stacks, aber ich bin tech-agnostisch unterwegs und arbeite mit dem, was am besten für dich passt.",
+      "frontend": {
+        "title": "Frontend",
+        "items": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vue.js"]
+      },
+      "backend": {
+        "title": "Backend",
+        "items": ["Python", "FastAPI", "Node.js", "PostgreSQL", "Firebase"]
+      },
+      "data": {
+        "title": "Data & Analytics",
+        "items": ["Databricks", "BigQuery", "Apache Superset", "Airbyte", "Pandas"]
+      },
+      "cloud": {
+        "title": "Cloud & DevOps",
+        "items": ["Google Cloud", "Azure", "Docker", "GitHub Actions", "Serverless"]
+      }
+    },
+    "pricing": {
+      "title": "Preise",
+      "intro": "Ab CHF 500 – Für Prototypen und erste Machbarkeitsprüfungen",
+      "subtitle": "Auch als Abo-Modell in monatlicher Zahlung möglich",
+      "startup": "Bei Startups auch als Anteil möglich",
+      "contact": "Bei Fragen gerne kontaktieren"
+    },
+    "cta": {
+      "title": "Projekt starten?",
+      "description": "Kontaktiere mich für ein unverbindliches Gespräch.",
+      "email": "📧 hello@severin.io",
+      "whatsapp": "WhatsApp",
+      "note": "Antwort innerhalb 24h"
+    }
+  },
+  "about": {
+    "title": "Über mich",
+    "kicker": "Data & DevOps Engineer · Zürich, Schweiz",
+    "greeting": "Hallo, ich bin Severin Lindenmann 👋",
+    "intro1": "Ich bin ein leidenschaftlicher Data Engineer mit Hintergrund in Mobilität, Data Science und Wirtschaft. Ich habe meinen Bachelor of Science in Wirtschaft und Data Science in Mobilität an der Hochschule Luzern abgeschlossen, was mir eine solide Grundlage sowohl in Technologie als auch im Business vermittelt hat.",
+    "intro2": "Heute helfe ich Teams dabei, zuverlässige Datenprodukte zu bauen, Delivery-Pipelines zu automatisieren und Developer Experiences zu schaffen, die sich mühelos anfühlen.",
+    "whatImDoing": "Was ich jetzt mache",
+    "currentRole": "Aktuell arbeite ich als Data & DevOps Engineer / Consultant bei",
+    "since": "in Zürich, Schweiz. In dieser Rolle konzentriere ich mich auf:",
+    "responsibilities": [
+      "Design und Implementierung robuster Datenplattformen zur Unterstützung von Analytics- und Business-Intelligence-Anforderungen.",
+      "Beratung und Unterstützung von Teams bei der Optimierung von DevOps-Prozessen und der Entwicklung von Python- und SQL-Lösungen.",
+      "Steigerung der Entwicklungseffizienz mit Tools wie Git und GitHub Copilot.",
+      "Implementierung zentraler Datenanalyseplattformen mit Azure Databricks.",
+      "Migration von Qlik-Dashboards zu Power BI.",
+      "Entwicklung angepasster Python-Frameworks für Metadaten-Management.",
+      "Automatisierung von CI/CD-Pipelines mit SQL und Spark.",
+      "Definition und Etablierung von Entwicklungsprozessen sowie Einführung von Tools wie Git und Visual Studio Code."
+    ],
+    "whereIveBeen": "Wo ich war",
+    "previousRoles": "In meinen früheren Rollen habe ich wesentlich zu verschiedenen Daten- und Produktinitiativen beigetragen:",
+    "experiences": [
+      {
+        "role": "Data Engineer — ",
+        "company": "b.telligent",
+        "description": ": Entwicklung von Data-Warehouse-Lösungen und ETL-Pipelines mit Databricks, Snowflake, Azure und Fabric—um aus Rohdaten verlässliche Insights zu generieren."
+      },
+      {
+        "role": "CTO & Full Stack Developer — ",
+        "company": "Voicy AG",
+        "description": ": Entwicklung einer Voice-First-Web-App für organisationale Selbstreflexion, unterstützt durch KI-basierte Datenanalyse."
+      },
+      {
+        "role": "CTO & Data Scientist — ",
+        "company": "Layer",
+        "description": ": Launch von Layer.swiss, einem Spin-off von Oberholzer Digital mit Fokus auf datengetriebene Business-Lösungen für KMU im Marketing-Sektor."
+      },
+      {
+        "role": "Consultant — Oberholzer Digital: ",
+        "company": "",
+        "description": "Umsetzung datengetriebener Strategien und Deployment von Web-Analytics-Stacks für Kunden."
+      },
+      {
+        "role": "Application Manager — ",
+        "company": "Screenimage Systems AG",
+        "description": ": Leitung der Implementierung von Digital-Signage-Software und Entwicklung von Automatisierungslösungen."
+      }
+    ],
+    "education": {
+      "title": "Ausbildung",
+      "bachelor": {
+        "title": "Bachelor of Science in Mobility, Data Science and Economics",
+        "period": "2020 - 2024",
+        "institution": "Hochschule Luzern"
+      },
+      "berufsmatur": {
+        "title": "Technische Berufsmaturität 2",
+        "period": "2019 - 2020",
+        "institution": "Berufsschule Aarau"
+      },
+      "apprentice": {
+        "title": "Informatik Systemtechniker EFZ",
+        "period": "2013 - 2017",
+        "institution": "Berufsschule Baden"
+      }
+    },
+    "certifications": {
+      "title": "Zertifizierungen",
+      "items": [
+        {
+          "icon": "📋",
+          "name": "CPRE - Requirements Engineering",
+          "issuer": "Future Network Cert",
+          "date": "Okt 2025"
+        },
+        {
+          "iconKey": "github",
+          "name": "GitHub Foundations",
+          "issuer": "GitHub",
+          "date": "Mär 2025"
+        },
+        {
+          "iconKey": "azure",
+          "name": "Microsoft Fabric Analytics Engineer",
+          "issuer": "Microsoft",
+          "date": "Mär 2025"
+        },
+        {
+          "iconKey": "azure",
+          "name": "Azure Fundamentals",
+          "issuer": "Microsoft",
+          "date": "Feb 2025"
+        },
+        {
+          "iconKey": "databricks",
+          "name": "Databricks Data Engineer Associate",
+          "issuer": "Databricks",
+          "date": "Jan 2025"
+        },
+        {
+          "iconKey": "google",
+          "name": "Google Data Analytics Specialization",
+          "issuer": "Coursera",
+          "date": "Nov 2021"
+        }
+      ]
+    },
+    "skills": {
+      "title": "Fähigkeiten",
+      "dataEngineering": {
+        "title": "Data Engineering",
+        "items": ["Databricks", "Azure", "BigQuery", "PostgreSQL", "Snowflake", "Apache Superset", "Airbyte"]
+      },
+      "programming": {
+        "title": "Programmierung",
+        "items": ["Python", "JavaScript", "TypeScript", "SQL", "Shell"]
+      },
+      "devOps": {
+        "title": "DevOps & Cloud",
+        "items": ["Docker", "Google Cloud", "Azure", "GitHub Actions", "Serverless", "CI/CD"]
+      },
+      "frameworks": {
+        "title": "Frameworks",
+        "items": ["React", "Next.js", "FastAPI", "Node.js", "Pandas", "Spark"]
+      }
+    },
+    "beyondResume": "Über den Lebenslauf hinaus",
+    "beyondText1": "In meiner Freizeit liebe ich es, neue Datensätze zu erkunden, kleine Side-Projects zu erstellen und Ideen mit Python und React zum Leben zu erwecken.",
+    "beyondText2": "Meine Leidenschaft für Lernen und Experimentieren hält mich auf der Suche nach dem Sweet Spot, an dem durchdachtes Design, zuverlässige Daten und Neugier aufeinandertreffen.",
+    "beyondText3": "Ich bin entschlossen, in diesem Bereich weiter zu wachsen und meine Fähigkeiten und mein Wissen einzusetzen, um Innovationen voranzutreiben und einen positiven Einfluss zu haben."
+  },
+  "projects": {
+    "title": "Projekte",
+    "intro": "Eine Auswahl meiner realisierten Projekte – von KI-gestützten Web-Apps über Datenanalyse-Tools bis zu interaktiven Anwendungen. Jedes Projekt zeigt meine Expertise in modernen Technologien und datenschutzkonformen Lösungen. Ausgewählte Projekte findest du auf meinem GitHub",
+    "liveDemo": "Live-Demo",
+    "github": "GitHub",
+    "vertragsGenerator": {
+      "title": "Vertrags-Generator",
+      "meta": "KI · Recht · Schweizer & Deutsches Recht",
+      "summary": "KI-gestützte Plattform zur Erstellung rechtsgültiger Verträge in der Schweiz und Deutschland, einschließlich Fahrzeug- und Darlehensverträgen.",
+      "features": [
+        "Erster Vertrag kostenlos mit KI-optimierter rechtlicher Ausarbeitung.",
+        "Vollständig verschlüsselt und konform mit Schweizer (OR) und deutschem Recht.",
+        "Digitales Signieren und Teilen in vier einfachen Schritten."
+      ]
+    },
+    "magyul": {
+      "title": "Magyul – Ungarisch-Lern-App",
+      "meta": "React · TypeScript · Firebase · PWA",
+      "summary": "Ein mehrsprachiger Vokabeltrainer mit Konjugationsübungen, Offline-First-Lernmodi und kompakten Grammatikführern.",
+      "features": [
+        "Karteikarten mit HU / EN / DE Kontextsätzen.",
+        "Installierbare PWA-Erfahrung mit IndexedDB-Sync."
+      ]
+    },
+    "swissAI": {
+      "title": "Swiss AI Weeks Banking Client Simulation",
+      "meta": "Python · Datensimulation",
+      "summary": "Synthetische Banking-Datensätze und Personas, die KI-Systeme zur Betrugserkennung und Kundenanalyse unter Stress testen.",
+      "features": [
+        "Szenario-Engine für konfigurierbares Kundenverhalten.",
+        "Probabilistische Ereignisgenerierung für Analyse-Sandboxen."
+      ]
+    },
+    "chinderhuete": {
+      "title": "Chinderhuete.ch – Nanny Service",
+      "meta": "HTML · CSS · Responsive Design",
+      "summary": "Professionelle Landing-Page für Nanny- und Notfall-Kinderbetreuungsdienste in den Regionen Aargau und Zürich.",
+      "features": [
+        "Klare Serviceübersicht mit Preisinformation.",
+        "Responsive Design für mobile Nutzer.",
+        "Direkte Kontaktmöglichkeiten via WhatsApp und E-Mail."
+      ]
+    },
+    "roadSegmentation": {
+      "title": "Strassenverkehrs-Segmentierung",
+      "meta": "Computer Vision · PyTorch",
+      "summary": "Semantische Segmentierungsexperimente zur Klassifizierung von Straßen, Autos und Fußgängern für intelligentere Mobilitätsanalysen.",
+      "features": [
+        "Training-Notebooks mit Augmentations- und Bewertungs-Tools.",
+        "Einsetzbare Inferenzskripte für Batch- und Live-Verwendung."
+      ]
+    },
+    "wuchemenu": {
+      "title": "Wuchemenu.ch",
+      "meta": "React · Contentful",
+      "summary": "Wöchentliche Rezeptinspiration mit kuratierten Menüs, saisonalen Aromen und Einkaufsplanungs-Prompts.",
+      "features": [
+        "Kartenbasiertes Browsen mit responsiven Layouts.",
+        "Headless-CMS-Workflow für das Veröffentlichen frischer Menüs."
+      ]
+    },
+    "oneClassSVM": {
+      "title": "One Class SVM für Spam-Erkennung",
+      "meta": "Streamlit · Machine Learning",
+      "summary": "Ein interaktives Streamlit-Dashboard, das Teams einlädt, One-Class-SVM-Modelle zur Erkennung von Anomalien zu erkunden.",
+      "features": [
+        "Konfigurierbare Trainingsläufe mit Live-Metrik-Visualisierung.",
+        "Dataset-Upload-Helfer für schnelle Experimente."
+      ]
+    },
+    "trafficAccidents": {
+      "title": "Verkehrsunfälle in der Schweiz",
+      "meta": "Datenvisualisierung · GIS",
+      "summary": "Interaktive Dashboards, die Unfalltrends über Zeit, Schweregrad und Ort zwischen 2011 und 2021 aufzeigen.",
+      "features": [
+        "Explorative Filter mit responsiven Karten-Visuals.",
+        "Storytelling-Layouts für Workshops und Policy-Reviews."
+      ]
+    },
+    "twitterBot": {
+      "title": "Twitter-Klassifikations-Bot",
+      "meta": "NLP · Automatisierung",
+      "summary": "Ein Live-Sentiment-Bot, der Tweets nach Stimmung kennzeichnet, um Community-Signale in Echtzeit zu erfassen.",
+      "features": [
+        "Zweistufige Transformer-Inferenz mit Queue-Orchestrierung.",
+        "Dashboards zur Überwachung von Sentiment-Trends und Modelldrift."
+      ]
+    },
+    "loraIoT": {
+      "title": "LoRa IoT Segelboot-Sensor",
+      "meta": "IoT · LoRa · Hardware",
+      "summary": "Selbstgebauter Sensor zur Überwachung von GPS-Position, Temperatur und Feuchtigkeit auf einem Segelboot im Low-Power-Modus.",
+      "features": [
+        "Live-Tracking alle 5 Minuten über LoRa-Netzwerk.",
+        "Jahresauswertung von zurückgelegten Distanzen und besuchten Häfen.",
+        "Web-Dashboard zur Echtzeit-Überwachung und Alarmierung."
+      ]
+    }
+  }
+}

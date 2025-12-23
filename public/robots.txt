@@ -1,3 +1,10 @@
 # Allow all crawlers
 User-agent: *
 Allow: /
+
+# Sitemap
+Sitemap: https://severin.io/sitemap.xml
+
+# Disallow admin or private paths (if any)
+# User-agent: *
+# Disallow: /admin/

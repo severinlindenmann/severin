@@ -4,13 +4,15 @@ import Head from "next/head";
 import "../styles/main.css";
 import TagManager from "react-gtm-module";
 import { useEffect } from "react";
+import { LocaleProvider } from '../lib/LocaleContext';
+import Header from '../components/Header';
 
-export default function App({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     TagManager.initialize({ gtmId: "GTM-MLHR6QS" });
   }, []);
   return (
-    <>
+    <LocaleProvider>
       <Head>
         <link
           rel="alternate"
@@ -26,7 +28,10 @@ export default function App({ Component, pageProps }: AppProps) {
           crossOrigin="anonymous"
         />
       </Head>
+      <Header />
       <Component {...pageProps} />
-    </>
+    </LocaleProvider>
   );
 }
+
+export default App;

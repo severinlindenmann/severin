@@ -4,188 +4,241 @@ title: Projects
 date: 2023-01-01
 ---
 
-# Projects
-
 import Image from "next/image";
+import { TranslatedPage } from "../components/TranslatedPage";
 
-Here are some of the projects I've undertaken, many of which were created for personal enjoyment or as part of my studies at Hochschule Luzern.
-Most of them you can find on my  GitHub [@severinlindenmann](https://github.com/severinlindenmann) 
+<TranslatedPage>
+{(t) => (
+  <>
+    <h1>{t('projects.title')}</h1>
 
-<section className="project-grid">
+      <p>{t('projects.intro')} <a href="https://github.com/severinlindenmann" target="_blank" rel="noreferrer">@severinlindenmann</a></p>
 
-  <article className="project-tile">
-    <div className="project-tile__media project-tile__media--emoji" aria-hidden="true">
-      <span>🇨🇭</span>
-    </div>
-    <div className="project-tile__content">
-      <h2>Vertrags-Generator</h2>
-      <p className="project-tile__meta">AI · Legal · Swiss & German Law</p>
-      <p className="project-tile__summary">AI-powered platform for generating legally valid contracts in Switzerland and Germany, including vehicle and loan agreements.</p>
-      <ul className="project-tile__list">
-        <li>Free first contract with AI-optimized legal drafting.</li>
-        <li>Fully encrypted and compliant with Swiss (OR) and German law.</li>
-        <li>Digital signing and sharing in four simple steps.</li>
-      </ul>
-    </div>
-    <div className="project-tile__actions">
-      <a className="project-chip" href="https://vertrag-generieren.ch" target="_blank" rel="noreferrer">Live demo</a>
-    </div>
-  </article>
-  <article className="project-tile">
-    <div className="project-tile__media project-tile__media--emoji" aria-hidden="true">
-      <span>🇭🇺</span>
-    </div>
-    <div className="project-tile__content">
-      <h2>Magyul – Hungarian Language Learning App</h2>
-      <p className="project-tile__meta">React · TypeScript · Firebase · PWA</p>
-      <p className="project-tile__summary">A multilingual vocabulary trainer with conjugation drills, offline-first study modes, and bite-size grammar guides.</p>
-      <ul className="project-tile__list">
-        <li>Flashcards with HU / EN / DE context sentences.</li>
-        <li>Installable PWA experience with IndexedDB sync.</li>
-      </ul>
-    </div>
-    <div className="project-tile__actions">
-      <a className="project-chip" href="https://magyul.app" target="_blank" rel="noreferrer">Live demo</a>
-      <a className="project-chip" href="https://github.com/severinlindenmann/magyul" target="_blank" rel="noreferrer">GitHub</a>
-    </div>
-  </article>
+      <section className="project-grid">
+        <article className="project-tile">
+          <div className="project-tile__media project-tile__media--emoji" aria-hidden="true">
+            <span>🇨🇭</span>
+          </div>
+          <div className="project-tile__content">
+            <h2>{t('projects.vertragsGenerator.title')}</h2>
+            <p className="project-tile__meta">{t('projects.vertragsGenerator.meta')}</p>
+            <p className="project-tile__summary">{t('projects.vertragsGenerator.summary')}</p>
+            <ul className="project-tile__list">
+              {t('projects.vertragsGenerator.features').map((feature, index) => (
+                <li key={index}>{feature}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="project-tile__actions">
+            <a className="project-chip" href="https://vertrag-generieren.ch" target="_blank" rel="noreferrer">{t('projects.liveDemo')}</a>
+          </div>
+        </article>
 
-  <article className="project-tile">
-    <div className="project-tile__media project-tile__media--emoji" aria-hidden="true">
-      <span>🏦</span>
-    </div>
-    <div className="project-tile__content">
-      <h2>Swiss AI Weeks Banking Client Simulation</h2>
-      <p className="project-tile__meta">Python · Data Simulation</p>
-      <p className="project-tile__summary">Synthetic banking datasets and personas that stress-test AI systems for fraud detection and client analytics.</p>
-      <ul className="project-tile__list">
-        <li>Scenario engine for configurable customer behaviour.</li>
-        <li>Probabilistic event generation for analytics sandboxes.</li>
-      </ul>
-    </div>
-    <div className="project-tile__actions">
-      <a className="project-chip" href="https://github.com/severinlindenmann/swiss-ai-weeks-finnova-banking-client-simulation" target="_blank" rel="noreferrer">GitHub</a>
-    </div>
-  </article>
+        <article className="project-tile">
+          <div className="project-tile__media project-tile__media--emoji" aria-hidden="true">
+            <span>🇭🇺</span>
+          </div>
+          <div className="project-tile__content">
+            <h2>{t('projects.magyul.title')}</h2>
+            <p className="project-tile__meta">{t('projects.magyul.meta')}</p>
+            <p className="project-tile__summary">{t('projects.magyul.summary')}</p>
+            <ul className="project-tile__list">
+              {t('projects.magyul.features').map((feature, index) => (
+                <li key={index}>{feature}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="project-tile__actions">
+            <a className="project-chip" href="https://magyul.app" target="_blank" rel="noreferrer">{t('projects.liveDemo')}</a>
+            <a className="project-chip" href="https://github.com/severinlindenmann/magyul" target="_blank" rel="noreferrer">{t('projects.github')}</a>
+          </div>
+        </article>
 
-  <article className="project-tile">
-    <a className="project-tile__media" href="https://github.com/severinlindenmann/segmentation-of-streets-and-cars" target="_blank" rel="noreferrer">
-      <Image
-        src="https://storage.googleapis.com/seli-public-bucket-001/images/projects/segmentation.webp"
-        alt="Road traffic segmentation"
-        width={840}
-        height={560}
-        className="project-tile__image"
-      />
-    </a>
-    <div className="project-tile__content">
-      <h2>Road Traffic Segmentation</h2>
-      <p className="project-tile__meta">Computer Vision · PyTorch</p>
-      <p className="project-tile__summary">Semantic segmentation experiments that classify roads, cars, and pedestrians for smarter mobility analytics.</p>
-      <ul className="project-tile__list">
-        <li>Training notebooks with augmentation and evaluation tooling.</li>
-        <li>Deployable inference scripts for batch and live use.</li>
-      </ul>
-    </div>
-    <div className="project-tile__actions">
-      <a className="project-chip" href="https://github.com/severinlindenmann/segmentation-of-streets-and-cars" target="_blank" rel="noreferrer">GitHub</a>
-    </div>
-  </article>
+        <article className="project-tile">
+          <div className="project-tile__media">
+            <Image
+              src="https://storage.googleapis.com/seli-public-bucket-001/images/projects/lora.webp"
+              alt="LoRa IoT Sailboat Sensor"
+              width={840}
+              height={560}
+              className="project-tile__image"
+            />
+          </div>
+          <div className="project-tile__content">
+            <h2>{t('projects.loraIoT.title')}</h2>
+            <p className="project-tile__meta">{t('projects.loraIoT.meta')}</p>
+            <p className="project-tile__summary">{t('projects.loraIoT.summary')}</p>
+            <ul className="project-tile__list">
+              {t('projects.loraIoT.features').map((feature, index) => (
+                <li key={index}>{feature}</li>
+              ))}
+            </ul>
+          </div>
+        </article>
 
-  <article className="project-tile">
-    <a className="project-tile__media" href="https://github.com/severinlindenmann" target="_blank" rel="noreferrer">
-      <Image
-        src="https://storage.googleapis.com/seli-public-bucket-001/images/projects/wuchemenu.webp"
-        alt="Wuchemenu.ch"
-        width={840}
-        height={560}
-        className="project-tile__image"
-      />
-    </a>
-    <div className="project-tile__content">
-      <h2>Wuchemenu.ch</h2>
-      <p className="project-tile__meta">React · Contentful</p>
-      <p className="project-tile__summary">Weekly recipe inspiration with curated menus, seasonal flavours, and grocery planning prompts.</p>
-      <ul className="project-tile__list">
-        <li>Card-based browsing with responsive layouts.</li>
-        <li>Headless CMS workflow for publishing fresh menus.</li>
-      </ul>
-    </div>
-    <div className="project-tile__actions">
-      <a className="project-chip" href="https://github.com/severinlindenmann" target="_blank" rel="noreferrer">GitHub</a>
-    </div>
-  </article>
+        <article className="project-tile">
+          <div className="project-tile__media project-tile__media--emoji" aria-hidden="true">
+            <span>🏦</span>
+          </div>
+          <div className="project-tile__content">
+            <h2>{t('projects.swissAI.title')}</h2>
+            <p className="project-tile__meta">{t('projects.swissAI.meta')}</p>
+            <p className="project-tile__summary">{t('projects.swissAI.summary')}</p>
+            <ul className="project-tile__list">
+              {t('projects.swissAI.features').map((feature, index) => (
+                <li key={index}>{feature}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="project-tile__actions">
+            <a className="project-chip" href="https://github.com/severinlindenmann/swiss-ai-weeks-finnova-banking-client-simulation" target="_blank" rel="noreferrer">{t('projects.github')}</a>
+          </div>
+        </article>
 
-  <article className="project-tile">
-    <a className="project-tile__media" href="https://github.com/severinlindenmann/oneClassSVM" target="_blank" rel="noreferrer">
-      <Image
-        src="https://storage.googleapis.com/seli-public-bucket-001/images/projects/one_class_svm.webp"
-        alt="One Class SVM dashboard"
-        width={840}
-        height={560}
-        className="project-tile__image"
-      />
-    </a>
-    <div className="project-tile__content">
-      <h2>One Class SVM for Spam Detection</h2>
-      <p className="project-tile__meta">Streamlit · Machine Learning</p>
-      <p className="project-tile__summary">An interactive Streamlit dashboard that invites teams to explore one-class SVM models for spotting anomalies.</p>
-      <ul className="project-tile__list">
-        <li>Configurable training runs with live metric visualisation.</li>
-        <li>Dataset upload helpers for rapid experimentation.</li>
-      </ul>
-    </div>
-    <div className="project-tile__actions">
-      <a className="project-chip" href="https://github.com/severinlindenmann/oneClassSVM" target="_blank" rel="noreferrer">GitHub</a>
-    </div>
-  </article>
+        <article className="project-tile">
+          <div className="project-tile__media project-tile__media--emoji" aria-hidden="true">
+            <span>👶</span>
+          </div>
+          <div className="project-tile__content">
+            <h2>{t('projects.chinderhuete.title')}</h2>
+            <p className="project-tile__meta">{t('projects.chinderhuete.meta')}</p>
+            <p className="project-tile__summary">{t('projects.chinderhuete.summary')}</p>
+            <ul className="project-tile__list">
+              {t('projects.chinderhuete.features').map((feature, index) => (
+                <li key={index}>{feature}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="project-tile__actions">
+            <a className="project-chip" href="https://chinderhuete.ch" target="_blank" rel="noreferrer">{t('projects.liveDemo')}</a>
+          </div>
+        </article>
 
-  <article className="project-tile">
-    <a className="project-tile__media" href="https://github.com/severinlindenmann/W.MDSE_VSGIS06.F2481" target="_blank" rel="noreferrer">
-      <Image
-        src="https://storage.googleapis.com/seli-public-bucket-001/images/projects/traffic_accidents.webp"
-        alt="Traffic accidents in Switzerland"
-        width={840}
-        height={560}
-        className="project-tile__image"
-      />
-    </a>
-    <div className="project-tile__content">
-      <h2>Traffic Accidents in Switzerland</h2>
-      <p className="project-tile__meta">Data Visualisation · GIS</p>
-      <p className="project-tile__summary">Interactive dashboards that surface accident trends across time, severity, and location between 2011 and 2021.</p>
-      <ul className="project-tile__list">
-        <li>Exploratory filters with responsive map visuals.</li>
-        <li>Storytelling layouts for workshops and policy reviews.</li>
-      </ul>
-    </div>
-    <div className="project-tile__actions">
-      <a className="project-chip" href="https://github.com/severinlindenmann/W.MDSE_VSGIS06.F2481" target="_blank" rel="noreferrer">GitHub</a>
-    </div>
-  </article>
+        <article className="project-tile">
+          <a className="project-tile__media" href="https://github.com/severinlindenmann/segmentation-of-streets-and-cars" target="_blank" rel="noreferrer">
+            <Image
+              src="https://storage.googleapis.com/seli-public-bucket-001/images/projects/segmentation.webp"
+              alt="Road traffic segmentation"
+              width={840}
+              height={560}
+              className="project-tile__image"
+            />
+          </a>
+          <div className="project-tile__content">
+            <h2>{t('projects.roadSegmentation.title')}</h2>
+            <p className="project-tile__meta">{t('projects.roadSegmentation.meta')}</p>
+            <p className="project-tile__summary">{t('projects.roadSegmentation.summary')}</p>
+            <ul className="project-tile__list">
+              {t('projects.roadSegmentation.features').map((feature, index) => (
+                <li key={index}>{feature}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="project-tile__actions">
+            <a className="project-chip" href="https://github.com/severinlindenmann/segmentation-of-streets-and-cars" target="_blank" rel="noreferrer">{t('projects.github')}</a>
+          </div>
+        </article>
 
-  <article className="project-tile">
-    <a className="project-tile__media" href="https://github.com/severinlindenmann" target="_blank" rel="noreferrer">
-      <Image
-        src="https://storage.googleapis.com/seli-public-bucket-001/images/projects/twitter_bot.webp"
-        alt="Twitter classification bot"
-        width={840}
-        height={560}
-        className="project-tile__image"
-      />
-    </a>
-    <div className="project-tile__content">
-      <h2>Twitter Classification Bot</h2>
-      <p className="project-tile__meta">NLP · Automation</p>
-      <p className="project-tile__summary">A live sentiment bot that labels tweets by mood to surface community signals in real time.</p>
-      <ul className="project-tile__list">
-        <li>Two-stage transformer inference with queue orchestration.</li>
-        <li>Dashboards to monitor sentiment trends and model drift.</li>
-      </ul>
-    </div>
-    <div className="project-tile__actions">
-      <a className="project-chip" href="https://github.com/severinlindenmann" target="_blank" rel="noreferrer">GitHub</a>
-    </div>
-  </article>
+        <article className="project-tile">
+          <a className="project-tile__media" href="https://github.com/severinlindenmann" target="_blank" rel="noreferrer">
+            <Image
+              src="https://storage.googleapis.com/seli-public-bucket-001/images/projects/wuchemenu.webp"
+              alt="Wuchemenu.ch"
+              width={840}
+              height={560}
+              className="project-tile__image"
+            />
+          </a>
+          <div className="project-tile__content">
+            <h2>{t('projects.wuchemenu.title')}</h2>
+            <p className="project-tile__meta">{t('projects.wuchemenu.meta')}</p>
+            <p className="project-tile__summary">{t('projects.wuchemenu.summary')}</p>
+            <ul className="project-tile__list">
+              {t('projects.wuchemenu.features').map((feature, index) => (
+                <li key={index}>{feature}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="project-tile__actions">
+            <a className="project-chip" href="https://github.com/severinlindenmann" target="_blank" rel="noreferrer">{t('projects.github')}</a>
+          </div>
+        </article>
 
-</section>
+        <article className="project-tile">
+          <a className="project-tile__media" href="https://github.com/severinlindenmann/oneClassSVM" target="_blank" rel="noreferrer">
+            <Image
+              src="https://storage.googleapis.com/seli-public-bucket-001/images/projects/one_class_svm.webp"
+              alt="One Class SVM dashboard"
+              width={840}
+              height={560}
+              className="project-tile__image"
+            />
+          </a>
+          <div className="project-tile__content">
+            <h2>{t('projects.oneClassSVM.title')}</h2>
+            <p className="project-tile__meta">{t('projects.oneClassSVM.meta')}</p>
+            <p className="project-tile__summary">{t('projects.oneClassSVM.summary')}</p>
+            <ul className="project-tile__list">
+              {t('projects.oneClassSVM.features').map((feature, index) => (
+                <li key={index}>{feature}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="project-tile__actions">
+            <a className="project-chip" href="https://github.com/severinlindenmann/oneClassSVM" target="_blank" rel="noreferrer">{t('projects.github')}</a>
+          </div>
+        </article>
+
+        <article className="project-tile">
+          <a className="project-tile__media" href="https://github.com/severinlindenmann/W.MDSE_VSGIS06.F2481" target="_blank" rel="noreferrer">
+            <Image
+              src="https://storage.googleapis.com/seli-public-bucket-001/images/projects/traffic_accidents.webp"
+              alt="Traffic accidents in Switzerland"
+              width={840}
+              height={560}
+              className="project-tile__image"
+            />
+          </a>
+          <div className="project-tile__content">
+            <h2>{t('projects.trafficAccidents.title')}</h2>
+            <p className="project-tile__meta">{t('projects.trafficAccidents.meta')}</p>
+            <p className="project-tile__summary">{t('projects.trafficAccidents.summary')}</p>
+            <ul className="project-tile__list">
+              {t('projects.trafficAccidents.features').map((feature, index) => (
+                <li key={index}>{feature}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="project-tile__actions">
+            <a className="project-chip" href="https://github.com/severinlindenmann/W.MDSE_VSGIS06.F2481" target="_blank" rel="noreferrer">{t('projects.github')}</a>
+          </div>
+        </article>
+
+        <article className="project-tile">
+          <a className="project-tile__media" href="https://github.com/severinlindenmann" target="_blank" rel="noreferrer">
+            <Image
+              src="https://storage.googleapis.com/seli-public-bucket-001/images/projects/twitter_bot.webp"
+              alt="Twitter classification bot"
+              width={840}
+              height={560}
+              className="project-tile__image"
+            />
+          </a>
+          <div className="project-tile__content">
+            <h2>{t('projects.twitterBot.title')}</h2>
+            <p className="project-tile__meta">{t('projects.twitterBot.meta')}</p>
+            <p className="project-tile__summary">{t('projects.twitterBot.summary')}</p>
+            <ul className="project-tile__list">
+              {t('projects.twitterBot.features').map((feature, index) => (
+                <li key={index}>{feature}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="project-tile__actions">
+            <a className="project-chip" href="https://github.com/severinlindenmann" target="_blank" rel="noreferrer">{t('projects.github')}</a>
+          </div>
+        </article>
+      </section>
+    </>
+  )}
+</TranslatedPage>

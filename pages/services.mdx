@@ -1,0 +1,557 @@
+---
+type: page
+title: Services
+date: 2025-01-01
+---
+
+import Image from "next/image";
+import { TranslatedPage } from "../components/TranslatedPage";
+import EmailCopy from "../components/EmailCopy";
+
+<TranslatedPage>
+{(t) => (
+  <>
+    <header className="page-header">
+      <h1>{t('services.title')}</h1>
+      <p className="page-header__subtitle">{t('services.subtitle')}</p>
+    </header>
+
+    <section className="services-detail">
+      <article className="service-detail">
+        <h2>{t('services.webApps.title')}</h2>
+        <p className="service-detail__intro">{t('services.webApps.intro')}</p>
+        
+        <h3>{t('services.whatIOffer')}</h3>
+        <ul className="service-detail__features">
+          {t('services.webApps.features').map((feature, index) => (
+            <li key={index}>{feature}</li>
+          ))}
+        </ul>
+
+        <h3>{t('services.exampleProjects')}</h3>
+        <div className="example-projects">
+          <a href="https://vertrag-generieren.ch/" target="_blank" rel="noreferrer" className="example-project">
+            <div>
+              <strong>vertrag-generieren.ch</strong>
+              <p>{t('services.webApps.examples.vertrag')}</p>
+            </div>
+          </a>
+          <a href="https://magyul.app/" target="_blank" rel="noreferrer" className="example-project">
+            <div>
+              <strong>magyul.app</strong>
+              <p>{t('services.webApps.examples.magyul')}</p>
+            </div>
+          </a>
+          <a href="https://voicy.ch/" target="_blank" rel="noreferrer" className="example-project">
+            <div>
+              <strong>voicy.ch</strong>
+              <p>{t('services.webApps.examples.voicy')}</p>
+            </div>
+          </a>
+          <a href="https://layer.swiss/" target="_blank" rel="noreferrer" className="example-project">
+            <div>
+              <strong>layer.swiss</strong>
+              <p>{t('services.webApps.examples.layer')}</p>
+            </div>
+          </a>
+        </div>
+      </article>
+
+      <article className="service-detail">
+        <h2>{t('services.ai.title')}</h2>
+        <p className="service-detail__intro">{t('services.ai.intro')}</p>
+        
+        <h3>{t('services.whatIOffer')}</h3>
+        <ul className="service-detail__features">
+          {t('services.ai.features').map((feature, index) => (
+            <li key={index}>{feature}</li>
+          ))}
+        </ul>
+      </article>
+
+      <article className="service-detail">
+        <h2>{t('services.support.title')}</h2>
+        <p className="service-detail__intro">{t('services.support.intro')}</p>
+        
+        <h3>{t('services.whatIOffer')}</h3>
+        <ul className="service-detail__features">
+          {t('services.support.features').map((feature, index) => (
+            <li key={index}>{feature}</li>
+          ))}
+        </ul>
+      </article>
+    </section>
+
+    <section className="tech-stack">
+      <h2>{t('services.techStack.title')}</h2>
+      <p className="tech-stack__intro">{t('services.techStack.intro')}</p>
+      
+      <div className="tech-categories">
+        <div className="tech-category">
+          <h3>{t('services.techStack.frontend.title')}</h3>
+          <div className="tech-tags">
+            {t('services.techStack.frontend.items').map((tech, index) => (
+              <span key={index} className="tech-tag">{tech}</span>
+            ))}
+          </div>
+        </div>
+
+        <div className="tech-category">
+          <h3>{t('services.techStack.backend.title')}</h3>
+          <div className="tech-tags">
+            {t('services.techStack.backend.items').map((tech, index) => (
+              <span key={index} className="tech-tag">{tech}</span>
+            ))}
+          </div>
+        </div>
+
+        <div className="tech-category">
+          <h3>{t('services.techStack.data.title')}</h3>
+          <div className="tech-tags">
+            {t('services.techStack.data.items').map((tech, index) => (
+              <span key={index} className="tech-tag">{tech}</span>
+            ))}
+          </div>
+        </div>
+
+        <div className="tech-category">
+          <h3>{t('services.techStack.cloud.title')}</h3>
+          <div className="tech-tags">
+            {t('services.techStack.cloud.items').map((tech, index) => (
+              <span key={index} className="tech-tag">{tech}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section className="pricing-section">
+      <h2>{t('services.pricing.title')}</h2>
+      <div className="pricing-compact">
+        <p className="pricing-compact__intro">{t('services.pricing.intro')}</p>
+        <p className="pricing-compact__text">{t('services.pricing.subtitle')}</p>
+        <p className="pricing-compact__text">{t('services.pricing.startup')}</p>
+        <p className="pricing-compact__text">{t('services.pricing.contact')}</p>
+      </div>
+    </section>
+
+    <section className="cta-section">
+      <h2>{t('services.cta.title')}</h2>
+      <p>{t('services.cta.description')}</p>
+      <div className="cta-section__actions">
+        <EmailCopy className="btn btn--primary btn--large">
+          {t('services.cta.email')}
+        </EmailCopy>
+        <a 
+          href="https://wa.me/41765613150" 
+          target="_blank" 
+          rel="noreferrer"
+          className="btn btn--secondary btn--large btn--whatsapp"
+        >
+          <Image
+            src="/images/whatsapp.svg"
+            alt="WhatsApp"
+            width={24}
+            height={24}
+            className="btn-icon"
+          />
+          {t('services.cta.whatsapp')}
+        </a>
+      </div>
+      <p className="cta-section__note">{t('services.cta.note')}</p>
+    </section>
+
+    <style jsx>{`
+      .page-header {
+        text-align: center;
+        margin: 3rem 0 4rem;
+      }
+
+      .page-header h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        margin: 0 0 1rem;
+        background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .page-header__subtitle {
+        font-size: 1.25rem;
+        color: var(--text-muted);
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      .services-detail {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        margin-bottom: 4rem;
+      }
+
+      .service-detail {
+        padding: 2.5rem;
+        border-radius: 20px;
+        border: 1px solid var(--surface-border);
+        background: var(--surface);
+        box-shadow: var(--surface-shadow);
+        backdrop-filter: blur(18px);
+      }
+
+      .service-detail h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 0 0 1rem;
+      }
+
+      .service-detail__intro {
+        font-size: 1.125rem;
+        color: var(--text-muted);
+        margin-bottom: 2rem;
+        line-height: 1.7;
+      }
+
+      .service-detail h3 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin: 2rem 0 1rem;
+        color: var(--accent);
+      }
+
+      .service-detail__features {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 0.75rem;
+      }
+
+      .service-detail__features li {
+        padding-left: 1.75rem;
+        position: relative;
+        color: var(--text-muted);
+        line-height: 1.6;
+      }
+
+      .service-detail__features li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: var(--accent);
+        font-weight: bold;
+      }
+
+      .example-projects {
+        display: grid;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      .example-project {
+        display: block;
+        padding: 1.25rem;
+        border-radius: 12px;
+        border: 1px solid var(--surface-border);
+        background: var(--background);
+        text-decoration: none;
+        transition: all 0.2s ease;
+      }
+
+      .example-project:hover {
+        border-color: var(--accent);
+        transform: translateX(4px);
+      }
+
+      .example-project strong {
+        display: block;
+        color: var(--text);
+        margin-bottom: 0.25rem;
+      }
+
+      .example-project p {
+        margin: 0;
+        color: var(--text-muted);
+        font-size: 0.95rem;
+      }
+
+      .tech-stack {
+        margin: 4rem 0;
+        padding: 3rem;
+        border-radius: 20px;
+        border: 1px solid var(--surface-border);
+        background: var(--surface);
+        box-shadow: var(--surface-shadow);
+        backdrop-filter: blur(18px);
+      }
+
+      .tech-stack h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 0 0 1rem;
+        text-align: center;
+      }
+
+      .tech-stack__intro {
+        text-align: center;
+        color: var(--text-muted);
+        margin-bottom: 3rem;
+        font-size: 1.125rem;
+      }
+
+      .tech-categories {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+      }
+
+      .tech-category h3 {
+        font-size: 1.125rem;
+        font-weight: 600;
+        margin: 0 0 1rem;
+        color: var(--accent);
+      }
+
+      .tech-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .tech-tag {
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        background: var(--background);
+        border: 1px solid var(--surface-border);
+        font-size: 0.9rem;
+        color: var(--text);
+      }
+
+      .pricing-section {
+        margin: 4rem 0;
+      }
+
+      .pricing-section h2 {
+        font-size: 2.5rem;
+        font-weight: 800;
+        text-align: center;
+        margin: 0 0 2rem;
+      }
+
+      .pricing-compact {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 3rem;
+        border-radius: 20px;
+        border: 1px solid var(--surface-border);
+        background: var(--surface);
+        box-shadow: var(--surface-shadow);
+        backdrop-filter: blur(18px);
+        text-align: center;
+      }
+
+      .pricing-compact__intro {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--accent);
+        margin: 0 0 1.5rem;
+      }
+
+      .pricing-compact__text {
+        font-size: 1.125rem;
+        color: var(--text-muted);
+        margin: 0.75rem 0;
+        line-height: 1.6;
+      }
+
+      .pricing-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        margin-bottom: 3rem;
+      }
+
+      .pricing-card {
+        padding: 2.5rem;
+        border-radius: 16px;
+        border: 1px solid var(--surface-border);
+        background: var(--surface);
+        box-shadow: var(--surface-shadow);
+        backdrop-filter: blur(18px);
+        display: flex;
+        flex-direction: column;
+      }
+
+      .pricing-card--featured {
+        border: 2px solid var(--accent);
+        transform: scale(1.05);
+      }
+
+      .pricing-card h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 0 0 1rem;
+      }
+
+      .pricing-card__price {
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: var(--accent);
+        margin-bottom: 1rem;
+      }
+
+      .pricing-card p {
+        color: var(--text-muted);
+        margin-bottom: 1.5rem;
+        flex-grow: 1;
+      }
+
+      .pricing-card__features {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .pricing-card__features li {
+        padding: 0.5rem 0;
+        color: var(--text-muted);
+        font-size: 0.95rem;
+      }
+
+      .pricing-card__features li::before {
+        content: "✓ ";
+        color: var(--accent);
+        font-weight: bold;
+        margin-right: 0.5rem;
+      }
+
+      .cta-section {
+        text-align: center;
+        padding: 4rem 2rem;
+        border-radius: 24px;
+        border: 1px solid var(--surface-border);
+        background: linear-gradient(135deg, var(--surface), var(--background));
+        box-shadow: var(--surface-shadow);
+        backdrop-filter: blur(18px);
+        margin: 4rem 0;
+      }
+
+      .cta-section h2 {
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin: 0 0 1rem;
+      }
+
+      .cta-section p {
+        font-size: 1.25rem;
+        color: var(--text-muted);
+        margin-bottom: 2rem;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .cta-section__actions {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 1.5rem;
+      }
+
+      .cta-section__note {
+        font-size: 0.95rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 1rem 2rem;
+        border-radius: 12px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        border: 2px solid transparent;
+      }
+
+      .btn--whatsapp {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .btn-icon {
+        display: inline-block;
+      }
+
+      .btn--primary {
+        background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+        color: white;
+      }
+
+      .btn--primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(99, 102, 241, 0.3);
+      }
+
+      .btn--secondary {
+        background: var(--surface);
+        color: var(--text);
+        border-color: var(--accent);
+      }
+
+      .btn--secondary:hover {
+        background: var(--accent);
+        color: white;
+        transform: translateY(-2px);
+      }
+
+      .btn--large {
+        padding: 1.25rem 2.5rem;
+        font-size: 1.125rem;
+      }
+
+      @media (max-width: 768px) {
+        .page-header h1 {
+          font-size: 2rem;
+        }
+
+        .service-detail {
+          padding: 1.5rem;
+        }
+
+        .tech-stack {
+          padding: 2rem;
+        }
+
+        .tech-categories {
+          grid-template-columns: 1fr;
+        }
+
+        .pricing-compact {
+          padding: 2rem;
+        }
+
+        .cta-section {
+          padding: 3rem 1.5rem;
+        }
+
+        .cta-section h2 {
+          font-size: 2rem;
+        }
+
+        .cta-section__actions {
+          flex-direction: column;
+          width: 100%;
+        }
+
+        .btn--large {
+          width: 100%;
+        }
+      }
+    `}</style>
+  </>
+)}
+</TranslatedPage>

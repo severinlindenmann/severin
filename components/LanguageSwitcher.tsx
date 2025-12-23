@@ -8,7 +8,7 @@ export default function LanguageSwitcher() {
   const languages = [
     { code: 'de', name: 'Deutsch', flag: '🇨🇭' },
     { code: 'en', name: 'English', flag: '🇬🇧' }
-  ];
+  ] as const;
 
   const currentLanguage = languages.find(lang => lang.code === locale) || languages[0];
 
@@ -71,7 +71,7 @@ export default function LanguageSwitcher() {
               className={`language-switcher__option ${
                 lang.code === locale ? 'language-switcher__option--active' : ''
               }`}
-              onClick={() => changeLanguage(lang.code)}
+              onClick={() => changeLanguage(lang.code as 'de' | 'en')}
             >
               <span className="language-switcher__flag">{lang.flag}</span>
               <span className="language-switcher__name">{lang.name}</span>
